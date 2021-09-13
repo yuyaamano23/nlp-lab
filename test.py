@@ -21,30 +21,33 @@ sent1,sent2,labels=load_dataset('./ge_test.csv')
 
 acc=len(sent1)
 # nliの正解数
-pre1=0
 pre=0
 # bertscoreの正解数
 pre1=0
 #bert_type = 'bert-base'
 
+# 以下nli
 # ファインチューニング済のモデルを読み込む
 model = BertNLIModel('./nli_model_acc0.8831943861332694.state_dict')
 for s1,s2,l in zip(sent1,sent2,labels):
-    # 以下nli
     sent_pairs = [(s1,s2)]
-    label,prob= model(sent_pairs)
-    print('正解：',l,'予測：',label[0])
-    if l==label[0] or label[0] in 'neutral':
+    nli_label,prob= model(sent_pairs)
+    print('【nli】','正解：',l,'予測：',nli_label[0])
+    if l in nli_label[0]:
         pre+=1
     # 以下bertscore
     P, R, F1 = calc_bert_score([s1], [s2])
     F1=F1[0]
-    if F1>=0.85 and label[0] in 'entail':
+    print('文1',s1)
+    print('文2',s2)
+    print('【bertscore】','正解：',l,'予測：',F1)
+    if F1>=0.85 and l in 'entail':
         pre1+=1
-    elif F1<0.50 and label[0] in 'contradiction':
+    elif F1<0.50 and l in 'contradiction':
         pre1+=1
-    elif F1<0.85 and label[0] in 'neutral':
+    elif F1<0.85 and l in 'neutral':
         pre1+=1
+    print('======================================================')
 
 print('正解率1',pre/acc)
 print('正解率2',pre1/acc)
