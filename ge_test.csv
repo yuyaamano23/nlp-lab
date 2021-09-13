@@ -1,0 +1,56 @@
+t1,t2,label
+"We had been eagerly anticipating going cherry blossom viewing, but the rain ruined everything.","I was looking forward to seeing the cherry blossoms, but the rain ruined it.",entail(neutral)
+"The house was very quiet at night, so it was difficult to get to sleep.",The house was very quiet at night and I couldn't sleep easily.,entail
+We often eat food which is bad for our health without knowing it.,We often unknowingly eat foods that are harmful to our health.,entail
+Meeting wonderful people can enrich your life.,Meeting wonderful people enriches your life.,entail
+"There are many people who complain that they are so busy that they don't have enough time for reading, but they can find time if they really want to.","Many people spill when they are too busy to read a book, but if they feel like it, they can make time.",entail
+There are more fathers in Japan who devote much of their time to their children on weekends.,"Even in Japan, more and more fathers are spending a lot of time with their children on weekends.",entail
+"On our way home, it began to rain suddenly. We got wet to the skin and also almost lost our way.","On our way home, we got soaked in a shower and almost lost our way.
+
+",entail
+"This is the most interesting book I've ever read. Once you start reading it, you can't put it down until you've finished it.","I've never read such an interesting book. Once read, it cannot be stopped.",entail
+The aim of the new law is to limit the effects of second-hand smoke in public places.,The purpose of this new law is to prevent second-hand smoke in public places.,entail
+"I drive to work, and I try to leave as early as I can, to avoid traffic jams.","I commute by car, but I try to leave home as soon as possible to avoid traffic jams.",entail
+These days we are surrounded by a flood of manuals and how-to books.,"Today, there is a flood of all kinds of manuals and guides.",entail(neutral)
+In Tokyo a transportation network of commuter trains and subways makes an automobile hardly necessary.,"In Tokyo, trains and subways run vertically and horizontally, so you don't need a private car.",entail(neutral)
+"People talk a lot about ""internationalization"" today, and what do they actually mean by internationalization?","It is often said that ""internationalization"" is what it is.",entail(neutral)
+"As medical science has progressed, we have come to live longer than before.","As medicine has advanced, human life has increased.",entail
+More and more people are showing an interest in cars powered by solar energy or electricity.,There is growing interest in cars powered by solar energy and electricity.,entail(neutral)
+Many people have come to realize that protecting nature will lead to benefits for them.,Many people have come to recognize that protecting nature is in their own interest.,entail(neutral)
+Personal computers are very useful tools. In the future it will be almost impossible to imagine life without them.,"A personal computer is a very convenient tool. In the future, life without a personal computer will be unthinkable.",entail
+"Despite a lack of natural resources, Japan has managed to become an economic superpower through international trade.","Despite its scarcity of natural resources, Japan has become an economic powerhouse thanks to international trade.",entail
+"Even today tens of thousands of people around the world starve to death each year, unable even to buy enough food to live.","Even today, tens of thousands of people around the world starve to death each year without being able to buy enough food to survive.
+
+",entail
+There is a hill a little to the south of the center of the city. You can see the whole city from it.,"There is a hill just south of the city center, from which you can get a panoramic view of the city.",entail
+Every year they have a lot of damage in the Kyushu area whenever a typhoon hits the area.,"Every year when a typhoon hits Kyushu, it suffers great damage.",entail
+The Japanese have fewer opportunities for close contact with nature than before.,"Compared to the past, Japanese people are less familiar with nature.",entail
+"By learning foreign languages, you can learn ways of thinking which are different from your own. You will also become able to look at the Japanese language from a different perspective","By learning a foreign language, you can learn a different way of thinking from your own and see Japanese from a new perspective.",entail
+It is commonly accepted that Japanese people are sensitive to the change of the seasons.,It is generally accepted that the Japanese have a keen sense of the seasons.,entail
+What you need in the first place to think correctly is to have a critical attitude.,The first and foremost thing you need to think right is to have a critical attitude.,entail
+"If you leave ""metabolic syndrome"" untreated, you are more likely to have diabetes and cardiac infarction.","Leaving the so-called metabolic syndrome decreases the risk of developing diabetes and myocardial infarction.
+
+",contradiction
+Our language and culture are very different from those of Westerners. That is why it is not easy at all to really understand each other.,It's easy to really understand each other with Westerners who have very different languages ??and cultures.,contradiction
+"However busy our daily lives are, we should make time to enjoy culture.","your daily life is busy, you should have plenty of time to enjoy the culture.",contradiction(neutral)
+I could tell by the look of my mother's face that she was so upset that she couldn't speak.,"From his facial expression, I knew that my mother was so upset that she couldn't speak a world.",contradiction
+"I was often late for school. That was because my house was a long way from the school, and also because it was always difficult for me to get up early in the morning.","I was not often late for school. Partly because my house was far away, I wasn't good at getting up early.",contradiction
+The long recession is making it hard for college graduates to find employment.,"High-school students have difficulty finding employment due to the prolonged economic downturn.
+
+",contradiction(neutral)
+"When we are asked questions about Japan while traveling abroad, we are often surprised to find how ignorant we are about our own country.","When I go abroad and hear about Japan, I am often surprised by my ignore.",contradiction
+Personal computers have become much cheaper and therefore more widespread.,The fact that the price has become considerably cheaper doesn't have spurred the spread of personal computers.,contradiction
+" According to the latest census, Japanese people are getting married later in life.
+
+",The latest census reveals that late marriage was progressing.,entail(neutral)
+"It often happens that, long after you thought you had lost something, it turns up unexpectedly.","What I thought I had lost rarely comes out unexpectedly after a while.
+
+",contradiction
+Popular authors' books are selling quite well. We cannot hastily conclude that young people don't like reading any more.,The works of popular writers are still selling well. It cannot be quickly said that young people reading.,contradiction
+"According to a recent government survey, more than half of the respondents agree to allow married cupules to have different family names.","According to a recent government survey, more than half of the respondents agree to allow married couples to have different surnames.",contradiction(neutral)
+The widespread use of water filters and mineral water shows how many people distrust tap water.,The spread of household water purifiers and mineral water shows people's affirmation of tap water.,contradiction
+"When I visited the elementary school I used to go to for the first time in ten years, I was surprised because that the playground was smaller than I had thought.
+
+","When I visited the elementary school I used to go to in the first time in ten years, I was surprised that the schoolyard was smaller than I had expected.",contradiction
+The present age is one of excessive information. We should not blindly believe the large amount of information we get daily.,Today is an era of information overload. You do not take away the large amount of information you get every day.,entail(neutral)
+What effect will the decreasing birth rate and increasing life span have on society?,Will society  it be if the birthrate is declining and the population is aging?,contradiction(neutral)
