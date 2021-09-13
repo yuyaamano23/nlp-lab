@@ -15,8 +15,8 @@ def calc_bert_score(cands, refs):
 
 
 if __name__ == "__main__":
-    cands = ['i like dogs.']
-    refs = ['i like cats.']
+    refs = ['it is freezing today']
+    cands = ['the weather is cold today']
 
     P, R, F1 = calc_bert_score(cands, refs)
     print(F1)

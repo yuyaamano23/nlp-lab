@@ -444,6 +444,7 @@ def greedy_cos_idf(ref_embedding, ref_masks, ref_idf, hyp_embedding, hyp_masks, 
         ref_embedding = ref_embedding.transpose(1, 2).transpose(0, 1).contiguous().view(L * B, ref_embedding.size(1), D)
     batch_size = ref_embedding.size(0)
     sim = torch.bmm(hyp_embedding, ref_embedding.transpose(1, 2))
+    print('sim = torch.bmm(hyp_embedding, ref_embedding.transpose(1, 2)):\n',sim)
     masks = torch.bmm(hyp_masks.unsqueeze(2).float(), ref_masks.unsqueeze(1).float())
     if all_layers:
         masks = masks.unsqueeze(0).expand(L, -1, -1, -1).contiguous().view_as(sim)
@@ -452,11 +453,14 @@ def greedy_cos_idf(ref_embedding, ref_masks, ref_idf, hyp_embedding, hyp_masks, 
 
     masks = masks.float().to(sim.device)
     sim = sim * masks
+    print('sim * mask:\n',sim)
 
     #  cos類似度の2次元配列の最大値
     word_precision = sim.max(dim=2)[0]
     word_recall = sim.max(dim=1)[0]
-    print('utils.py','うんこうんこうんこうんこうんこ')
+    print('====================utils.py=====================')
+    print('word_precision:',word_precision)
+    print('word_recall:',word_recall)
 
     hyp_idf.div_(hyp_idf.sum(dim=1, keepdim=True))
     ref_idf.div_(ref_idf.sum(dim=1, keepdim=True))
