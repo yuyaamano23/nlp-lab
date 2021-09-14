@@ -15,8 +15,8 @@ def calc_bert_score(cands, refs):
 
 
 if __name__ == "__main__":
-    refs = ['it is freezing today']
-    cands = ['the weather is cold today']
+    refs = ["Personal computers have become much cheaper and therefore more widespread"]
+    cands = ["The fact that the price has become considerably cheaper doesn't have spurred the spread of personal computers"]
 
     P, R, F1 = calc_bert_score(cands, refs)
     print(F1)

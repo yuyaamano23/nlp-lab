@@ -19,6 +19,7 @@ def load_dataset(filepath, encoding='utf-8'):
     return a,b,c
 sent1,sent2,labels=load_dataset('./ge_test.csv')
 
+# 問題数
 acc=len(sent1)
 # nliの正解数
 pre=0
@@ -33,7 +34,7 @@ for s1,s2,l in zip(sent1,sent2,labels):
     sent_pairs = [(s1,s2)]
     nli_label,prob= model(sent_pairs)
     print('【nli】','正解：',l,'予測：',nli_label[0])
-    if l in nli_label[0]:
+    if nli_label[0] in l:
         pre+=1
     # 以下bertscore
     P, R, F1 = calc_bert_score([s1], [s2])
@@ -41,11 +42,11 @@ for s1,s2,l in zip(sent1,sent2,labels):
     print('文1',s1)
     print('文2',s2)
     print('【bertscore】','正解：',l,'予測：',F1)
-    if F1>=0.85 and l in 'entail':
+    if F1>=0.85 and 'entail' in l:
         pre1+=1
-    elif F1<0.50 and l in 'contradiction':
+    elif F1<0.50 and 'contradiction' in l:
         pre1+=1
-    elif F1<0.85 and l in 'neutral':
+    elif F1<0.85 and 'neutral' in l:
         pre1+=1
     print('======================================================')
 

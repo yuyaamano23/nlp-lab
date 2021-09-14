@@ -459,8 +459,8 @@ def greedy_cos_idf(ref_embedding, ref_masks, ref_idf, hyp_embedding, hyp_masks, 
     word_precision = sim.max(dim=2)[0]
     word_recall = sim.max(dim=1)[0]
     print('====================utils.py=====================')
-    print('word_precision:',word_precision)
-    print('word_recall:',word_recall)
+    print('word_precision:\n',word_precision)
+    print('word_recall:\n',word_recall)
 
     hyp_idf.div_(hyp_idf.sum(dim=1, keepdim=True))
     ref_idf.div_(ref_idf.sum(dim=1, keepdim=True))
@@ -497,7 +497,6 @@ def greedy_cos_idf(ref_embedding, ref_masks, ref_idf, hyp_embedding, hyp_masks, 
     F = F.masked_fill(torch.isnan(F), 0.0)
 
     return P, R, F
-
 
 def bert_cos_score_idf(
     model, refs, hyps, tokenizer, idf_dict, verbose=False, batch_size=64, device="cuda:0", all_layers=False,
