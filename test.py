@@ -17,7 +17,7 @@ def load_dataset(filepath, encoding='utf-8'):
     for l in df['label']:
         c.append(l)
     return a,b,c
-sent1,sent2,labels=load_dataset('./ge_test.csv')
+sent1,sent2,labels=load_dataset('./ge_test.tsv')
 
 # 問題数
 acc=len(sent1)
@@ -38,16 +38,19 @@ for s1,s2,l in zip(sent1,sent2,labels):
         pre+=1
     # 以下bertscore
     P, R, F1 = calc_bert_score([s1], [s2])
+    # 予測
+    pred = 'contradiction or neutral'
+    # 閾値
+    th = 0.91
     F1=F1[0]
-    print('文1',s1)
-    print('文2',s2)
-    print('【bertscore】','正解：',l,'予測：',F1)
-    if F1>=0.85 and 'entail' in l:
+    if F1>=th and 'entail' in l:
         pre1+=1
-    elif F1<0.50 and 'contradiction' in l:
+        pred = 'entail'
+    elif F1<th and ('contradiction' in l or 'neutral' in l):
         pre1+=1
-    elif F1<0.85 and 'neutral' in l:
-        pre1+=1
+    print('文1:',s1)
+    print('文2:',s2)
+    print('【bertscore】','正解：',l,'予測：',pred,'数値：',F1)
     print('======================================================')
 
 print('正解率1',pre/acc)

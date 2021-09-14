@@ -444,7 +444,7 @@ def greedy_cos_idf(ref_embedding, ref_masks, ref_idf, hyp_embedding, hyp_masks, 
         ref_embedding = ref_embedding.transpose(1, 2).transpose(0, 1).contiguous().view(L * B, ref_embedding.size(1), D)
     batch_size = ref_embedding.size(0)
     sim = torch.bmm(hyp_embedding, ref_embedding.transpose(1, 2))
-    print('sim = torch.bmm(hyp_embedding, ref_embedding.transpose(1, 2)):\n',sim)
+    # print('sim = torch.bmm(hyp_embedding, ref_embedding.transpose(1, 2)):\n',sim)
     masks = torch.bmm(hyp_masks.unsqueeze(2).float(), ref_masks.unsqueeze(1).float())
     if all_layers:
         masks = masks.unsqueeze(0).expand(L, -1, -1, -1).contiguous().view_as(sim)
@@ -453,14 +453,14 @@ def greedy_cos_idf(ref_embedding, ref_masks, ref_idf, hyp_embedding, hyp_masks, 
 
     masks = masks.float().to(sim.device)
     sim = sim * masks
-    print('sim * mask:\n',sim)
+    # print('sim * mask:\n',sim)
 
     #  cos類似度の2次元配列の最大値
     word_precision = sim.max(dim=2)[0]
     word_recall = sim.max(dim=1)[0]
-    print('====================utils.py=====================')
-    print('word_precision:\n',word_precision)
-    print('word_recall:\n',word_recall)
+    # print('====================utils.py=====================')
+    # print('word_precision:\n',word_precision)
+    # print('word_recall:\n',word_recall)
 
     hyp_idf.div_(hyp_idf.sum(dim=1, keepdim=True))
     ref_idf.div_(ref_idf.sum(dim=1, keepdim=True))
@@ -472,6 +472,7 @@ def greedy_cos_idf(ref_embedding, ref_masks, ref_idf, hyp_embedding, hyp_masks, 
     # bertsocre
     P = (word_precision * precision_scale).sum(dim=1)
     R = (word_recall * recall_scale).sum(dim=1)
+    # 閾値以下のsimがあったらその単語数/2*単語数 ペナルティ
     F = 2 * P * R / (P + R)
 
     hyp_zero_mask = hyp_masks.sum(dim=1).eq(2)
