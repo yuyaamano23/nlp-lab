@@ -40,11 +40,8 @@ for s1,s2 in zip(sent1,sent2):
     sent_pairs_right = [(s1,s2)]
     sent_pairs_left = [(s2,s1)]
     nli_label_right,prob_right = model(sent_pairs_right)
-    print('prob_right:',prob_right[0])
     nli_label_left,prob_left = model(sent_pairs_left)
-    print('prob_left:', prob_left[0])
     nli_label = 'contradiction'
-    print('type1111111111111:',type(prob_right[0][1].item()))
     if prob_right[0][1].item() > 0.95 and prob_left[0][1].item() > 0.95:
         nli_label = 'entail'
     print('【nli】','正解：contradiction','予測：',nli_label)
