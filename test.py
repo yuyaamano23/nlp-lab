@@ -19,16 +19,16 @@ def load_dataset(filepath, encoding='utf-8'):
         # c.append('contradiction')
     return a,b
     # return c
-sent1,sent2=load_dataset('./論文不正解文.csv')
+sent1,sent2=load_dataset('./論文データ文.csv')
 # sent1,sent2,labels=load_dataset('./論文不正解文.csv')
 
 # 問題数
 acc=len(sent1)
 print('len(acc)',acc)
 # nliの正解数
-pre=0
+ans=0
 # bertscoreの正解数
-pre1=0
+ans_bert_score=0
 #bert_type = 'bert-base'
 
 # 以下nli
@@ -42,13 +42,13 @@ for s1,s2 in zip(sent1,sent2):
     nli_label_right,prob_right = model(sent_pairs_right)
     nli_label_left,prob_left = model(sent_pairs_left)
     nli_label = 'contradiction'
+    # contradiction entail neutralの順番で2次元配列に格納されている
     if prob_right[0][1].item() > 0.95 and prob_left[0][1].item() > 0.95:
         nli_label = 'entail'
     print('【nli】','正解：contradiction','予測：',nli_label)
-    # contradiction entail neutral
     if nli_label == 'contradiction':
-        pre+=1
-    print('nli_pre：',pre)
+        ans+=1
+    print('nli_pre：',ans)
     # 以下bertscore
     # P, R, F1 = calc_bert_score([s1], [s2])
     # # 予測
@@ -69,11 +69,16 @@ for s1,s2 in zip(sent1,sent2):
     # print('bertscore_pre1',pre1)
     # print('======================================================')
 
-
 # 適合率の算出
-# def calc_precicsion():
+# def calc_precicsion(tp,acc):
+    # pre = /ans
+
+# 再現率の算出
+# def calc_recall(tp,acc):
+#     rec = tp/acc
+#     return rec
 
 
 
-print('正解率1',pre/acc)
+print('nli正解率:',ans/acc)
 # print('正解率2',pre1/acc)
