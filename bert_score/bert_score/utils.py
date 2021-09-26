@@ -406,29 +406,22 @@ def get_bert_embedding(all_sens, model, tokenizer, idf_dict, batch_size=-1, devi
     return total_embedding, mask, padded_idf
 
 
-# TODO: ここをいじってペナルティを与えたい
 def greedy_cos_idf(ref_embedding, ref_masks, ref_idf, hyp_embedding, hyp_masks, hyp_idf, all_layers=False):
     """
     Compute greedy matching based on cosine similarity.
-    コサイン類似度に基づいてグリーディーマッチングを計算します。
 
     Args:
         - :param: `ref_embedding` (torch.Tensor):
                    embeddings of reference sentences, BxKxd,
                    B: batch size, K: longest length, d: bert dimenison
-                   参照文の埋め込み BxKxd
-                   B：バッチサイズ、K：最長の長さ、d：次元数
         - :param: `ref_lens` (list of int): list of reference sentence length.
-                   参照文の長さのリスト。
         - :param: `ref_masks` (torch.LongTensor): BxKxK, BERT attention mask for
                    reference sentences.
         - :param: `ref_idf` (torch.Tensor): BxK, idf score of each word
                    piece in the reference setence
-                   参照分のword pieceのidfscore
         - :param: `hyp_embedding` (torch.Tensor):
                    embeddings of candidate sentences, BxKxd,
                    B: batch size, K: longest length, d: bert dimenison
-                   候補分の埋め込み
         - :param: `hyp_lens` (list of int): list of candidate sentence length.
         - :param: `hyp_masks` (torch.LongTensor): BxKxK, BERT attention mask for
                    candidate sentences.
@@ -444,7 +437,6 @@ def greedy_cos_idf(ref_embedding, ref_masks, ref_idf, hyp_embedding, hyp_masks, 
         ref_embedding = ref_embedding.transpose(1, 2).transpose(0, 1).contiguous().view(L * B, ref_embedding.size(1), D)
     batch_size = ref_embedding.size(0)
     sim = torch.bmm(hyp_embedding, ref_embedding.transpose(1, 2))
-    # print('sim = torch.bmm(hyp_embedding, ref_embedding.transpose(1, 2)):\n',sim)
     masks = torch.bmm(hyp_masks.unsqueeze(2).float(), ref_masks.unsqueeze(1).float())
     if all_layers:
         masks = masks.unsqueeze(0).expand(L, -1, -1, -1).contiguous().view_as(sim)
@@ -453,32 +445,9 @@ def greedy_cos_idf(ref_embedding, ref_masks, ref_idf, hyp_embedding, hyp_masks, 
 
     masks = masks.float().to(sim.device)
     sim = sim * masks
-    print('sim * mask:\n',sim)
 
-    #  cos類似度の2次元配列の最大値
     word_precision = sim.max(dim=2)[0]
     word_recall = sim.max(dim=1)[0]
-    print('====================utils.py=====================')
-    print('閾値修正する前のword_precision:\n',word_precision)
-    print('閾値修正する前のword_recall:\n',word_recall)
-
-    w_p = word_precision.tolist()[0]
-    w_r = word_recall.tolist()[0]
-    # 閾値
-    th = 0.9
-    p_penalty_count = 0
-    r_penalty_count = 0
-    # 条件分岐
-    # 閾値以下のsimがあったらその単語数/2*単語数 ペナルティ
-    for item in w_p:
-        if item < th:
-            p_penalty_count+= 1
-    for item in w_r:
-        if item < th:
-            r_penalty_count+= 1
-    print('precisionペナルティ単語個数',p_penalty_count)
-    print('recallペナルティ単語個数',r_penalty_count)
-
 
     hyp_idf.div_(hyp_idf.sum(dim=1, keepdim=True))
     ref_idf.div_(ref_idf.sum(dim=1, keepdim=True))
@@ -487,7 +456,6 @@ def greedy_cos_idf(ref_embedding, ref_masks, ref_idf, hyp_embedding, hyp_masks, 
     if all_layers:
         precision_scale = precision_scale.unsqueeze(0).expand(L, B, -1).contiguous().view_as(word_precision)
         recall_scale = recall_scale.unsqueeze(0).expand(L, B, -1).contiguous().view_as(word_recall)
-    # bertsocre
     P = (word_precision * precision_scale).sum(dim=1)
     R = (word_recall * recall_scale).sum(dim=1)
     F = 2 * P * R / (P + R)
@@ -514,21 +482,8 @@ def greedy_cos_idf(ref_embedding, ref_masks, ref_idf, hyp_embedding, hyp_masks, 
 
     F = F.masked_fill(torch.isnan(F), 0.0)
 
-    # Fの確認
-    print('F',F)
-    print('Fの中身',F.item())
-    print('Fの中身のタイプ',type(F.item()))
-    # 閾値以下のsim最大値があったらその単語数/2*単語数 ペナルティを与える
-    p_minus = p_penalty_count/(1 * len(w_p))
-    r_minus = r_penalty_count/(1 * len(w_r))
-    print('pペナルティマイナス数値',p_minus)
-    print('wペナルティマイナス数値',r_minus)
-    print('pとwのペナルティマイナス数値平均', (p_minus + r_minus) / 2)
-
-    # 左辺は新しいF
-    F = F.item() - (p_minus + r_minus) / 2
-    F = torch.tensor([F])
     return P, R, F
+
 
 def bert_cos_score_idf(
     model, refs, hyps, tokenizer, idf_dict, verbose=False, batch_size=64, device="cuda:0", all_layers=False,

@@ -1,5 +1,5 @@
-from bert_nli import BertNLIModel
 import pandas as pd
+from bertscore import calc_bert_score
 
 # csvデータセットを整形
 def load_dataset(filepath, encoding='utf-8'):
@@ -27,35 +27,31 @@ index = 0
 # 問題数
 acc = len(sent1)
 print('len(acc)', acc)
-# nliでの不正解、正解それぞれについてのtpを初期化
-tp_contradiction_nli = 0
-tp_entail_nli = 0
+# bert_scoreでの不正解、正解それぞれについてのtpを初期化
+tp_contradiction_bert_score = 0
+tp_entail_bert_score = 0
 #bert_type = 'bert-base'
 
 
-# ファインチューニング済のモデルを読み込む
-model = BertNLIModel('./nli_model_acc0.8831943861332694.state_dict')
 for s1, s2, l in zip(sent1, sent2, labels):
-    # ========================  以下nli  ================================
-    # 両方向で含意関係認識
-    sent_pairs_right = [(s1, s2)]
-    sent_pairs_left = [(s2, s1)]
-    nli_label_right, prob_right = model(sent_pairs_right)
-    nli_label_left, prob_left = model(sent_pairs_left)
-    nli_label = ''
-    # contradiction entail neutralの順番で2次元配列に格納されている
-    if prob_right[0][1].item() > 0.95 and prob_left[0][1].item() > 0.95:
-        nli_label = 'entail'
-        # nliでentailと判断するかつ、実際に正解文である時
-        if nli_label == l:
-            tp_entail_nli += 1
-    else:
-        nli_label = 'contradiction'
-        # nliでcontradictionと判断するかつ、実際に不正解文章である時
-        if nli_label == l:
-            tp_contradiction_nli += 1
+    bert_score_label = ''
     index += 1
-    print('【nli】>>>', '問題番号：', index, '正解ラベル：', l, '予測：', nli_label)
+    P, R, F1 = calc_bert_score([s1], [s2])
+    # 閾値
+    th = 0.98
+    F1=F1[0]
+    if F1 > th:
+        bert_score_label = 'entail'
+        # bert_scoreでentailと判断するかつ、実際に正解文である時
+        if bert_score_label == l:
+            tp_entail_bert_score += 1
+    else:
+        bert_score_label = 'contradiction'
+        # bert_scoreでcontradictionと判断するかつ、実際に不正解文である時
+        if bert_score_label == l:
+            tp_contradiction_bert_score += 1
+
+    print('【bertscore】>>>','問題番号：', index,'正解ラベル：',l,'予測：', bert_score_label,'数値：',F1)
 
 
 # =========================== 以下データ算出 =================================
@@ -86,17 +82,17 @@ def calc_f(pre=0, rec=0):
 # 不正解問題数:164,正解問題数:41
 
 # 不正解文について
-print('tp_cont_nli',tp_contradiction_nli)
-print('tp_ent_nli',tp_entail_nli)
-huseikai_pre = calc_precicsion(tp_contradiction_nli, 41 - tp_entail_nli)
-huseikai_rec = calc_recall(tp_contradiction_nli, 164 - tp_contradiction_nli)
+print('tp_cont_bert_score', tp_contradiction_bert_score)
+print('tp_ent_bert_score', tp_entail_bert_score)
+huseikai_pre = calc_precicsion(tp_contradiction_bert_score, 41 - tp_entail_bert_score)
+huseikai_rec = calc_recall(tp_contradiction_bert_score, 164 - tp_contradiction_bert_score)
 huseikai_f = calc_f(huseikai_pre, huseikai_rec)
 print('=============不正解文================')
-print('誤り検出あり：', tp_contradiction_nli, '誤り検出無し；', 164 - tp_contradiction_nli, '適合率；', huseikai_pre , '再現率：', huseikai_rec, 'F値', huseikai_f)
+print('誤り検出あり：', tp_contradiction_bert_score, '誤り検出無し；', 164 - tp_contradiction_bert_score, '適合率；', huseikai_pre , '再現率：', huseikai_rec, 'F値', huseikai_f)
 
 # 正解文について
-seikai_pre = calc_precicsion(tp_entail_nli, 164 - tp_contradiction_nli)
-seikai_rec = calc_recall(tp_entail_nli, 41 - tp_entail_nli)
+seikai_pre = calc_precicsion(tp_entail_bert_score, 164 - tp_contradiction_bert_score)
+seikai_rec = calc_recall(tp_entail_bert_score, 41 - tp_entail_bert_score)
 seikai_f = calc_f(seikai_pre, seikai_rec)
 print('=============正解文================')
-print('誤り検出あり：', 41 - tp_entail_nli, '誤り検出無し；', tp_entail_nli, '適合率；', seikai_pre , '再現率：', seikai_rec, 'F値', seikai_f)
+print('誤り検出あり：', 41 - tp_entail_bert_score, '誤り検出無し；', tp_entail_bert_score, '適合率；', seikai_pre , '再現率：', seikai_rec, 'F値', seikai_f)
