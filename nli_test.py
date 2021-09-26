@@ -25,6 +25,8 @@ def load_dataset(filepath, encoding='utf-8'):
 
 sent1, sent2, labels = load_dataset('./論文データ文.csv')
 
+# 問題番号
+index = 0
 # 問題数
 acc = len(sent1)
 print('len(acc)', acc)
@@ -57,10 +59,8 @@ for s1, s2, l in zip(sent1, sent2, labels):
         # nliでcontradictionと判断するかつ、実際に不正解文章である時
         if nli_label == l:
             tp_contradiction_nli += 1
-    # 問題番号
-    index = 0
     index += 1
-    print('問題番号：', index,'【nli】>>>', 'ラベル：', l, '予測：', nli_label)
+    print('【nli】>>>', '問題番号：', index, 'ラベル：', l, '予測：', nli_label)
 # ========================  以下bert_score  ===========================
     # P, R, F1 = calc_bert_score([s1], [s2])
     # # 予測
@@ -108,6 +108,7 @@ def calc_f(pre=0, rec=0):
 
 # 結果の出力
 # 不正解問題数:164,正解問題数:41
+
 # 不正解文について
 print('tp_cont_nli',tp_contradiction_nli)
 print('tp_ent_nli',tp_entail_nli)
@@ -116,3 +117,10 @@ huseikai_rec = calc_recall(tp_contradiction_nli, 164 - tp_contradiction_nli)
 huseikai_f = calc_f(huseikai_pre, huseikai_rec)
 print('=============不正解文================')
 print('誤り検出あり：', tp_contradiction_nli, '誤り検出無し；', 164 - tp_contradiction_nli, '適合率；', huseikai_pre , '再現率：', huseikai_rec, 'F値', huseikai_f)
+
+# 正解文について
+seikai_pre = calc_precicsion(tp_entail_nli, 164 - tp_contradiction_nli)
+seikai_rec = calc_recall(tp_entail_nli, 41 - tp_entail_nli)
+seikai_f = calc_f(seikai_pre, seikai_rec)
+print('=============正解文================')
+print('誤り検出あり：', 41 - tp_entail_nli, '誤り検出無し；', tp_entail_nli, '適合率；', seikai_pre , '再現率：', seikai_rec, 'F値', seikai_f)
