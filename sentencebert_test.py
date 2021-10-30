@@ -34,13 +34,9 @@ tp_contradiction_sentence_bert = 0
 tp_entail_bert_sentence_bert = 0
 #bert_type = 'bert-base'
 
-<<<<<<< HEAD
 # 閾値
 th = 0.87
 print('閾値：',th)
-
-=======
->>>>>>> 58fe4ea786da3977ab6a37bc5812223f3e1338a2
 
 for s1, s2, l in zip(sent1, sent2, labels):
     sentence_bert_label = ''
