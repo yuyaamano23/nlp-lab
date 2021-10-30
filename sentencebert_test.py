@@ -34,10 +34,13 @@ tp_contradiction_sentence_bert = 0
 tp_entail_bert_sentence_bert = 0
 #bert_type = 'bert-base'
 
+<<<<<<< HEAD
 # 閾値
 th = 0.87
 print('閾値：',th)
 
+=======
+>>>>>>> 58fe4ea786da3977ab6a37bc5812223f3e1338a2
 
 for s1, s2, l in zip(sent1, sent2, labels):
     sentence_bert_label = ''
@@ -53,6 +56,11 @@ for s1, s2, l in zip(sent1, sent2, labels):
 
     #Compute cosine-similarits
     cosine_scores = util.pytorch_cos_sim(embeddings1, embeddings2)
+<<<<<<< HEAD
+=======
+    # 閾値
+    th = 0.87
+>>>>>>> 58fe4ea786da3977ab6a37bc5812223f3e1338a2
     if cosine_scores.item() > th:
         sentence_bert_label = 'entail'
         # sentence_bertでentailと判断するかつ、実際に正解文である時
@@ -94,9 +102,12 @@ def calc_f(pre=0, rec=0):
 # 結果の出力
 # 不正解問題数:164,正解問題数:41
 
+<<<<<<< HEAD
 # 閾値
 print('閾値：',th)
 
+=======
+>>>>>>> 58fe4ea786da3977ab6a37bc5812223f3e1338a2
 # 不正解文について
 print('tp_cont_bert_score', tp_contradiction_sentence_bert)
 print('tp_ent_bert_score', tp_entail_bert_sentence_bert)
