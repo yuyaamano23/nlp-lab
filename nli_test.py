@@ -31,6 +31,9 @@ print('len(acc)', acc)
 tp_contradiction_nli = 0
 tp_entail_nli = 0
 #bert_type = 'bert-base'
+# 閾値
+th = 0.95
+print('閾値：',th)
 
 
 # ファインチューニング済のモデルを読み込む
@@ -44,7 +47,7 @@ for s1, s2, l in zip(sent1, sent2, labels):
     nli_label_left, prob_left = model(sent_pairs_left)
     nli_label = ''
     # contradiction entail neutralの順番で2次元配列に格納されている
-    if prob_right[0][1].item() > 0.95 and prob_left[0][1].item() > 0.95:
+    if prob_right[0][1].item() > th and prob_left[0][1].item() > th:
         nli_label = 'entail'
         # nliでentailと判断するかつ、実際に正解文である時
         if nli_label == l:
@@ -84,6 +87,9 @@ def calc_f(pre=0, rec=0):
 
 # 結果の出力
 # 不正解問題数:164,正解問題数:41
+
+# 閾値
+print('閾値：',th)
 
 # 不正解文について
 print('tp_cont_nli',tp_contradiction_nli)
