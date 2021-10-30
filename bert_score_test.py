@@ -31,16 +31,18 @@ print('len(acc)', acc)
 tp_contradiction_bert_score = 0
 tp_entail_bert_score = 0
 #bert_type = 'bert-base'
+# 閾値
+th = 0.94
+print('閾値：',th)
 
 
-for s1, s2, l in zip(sent1, sent2, labels):
+P, R, F1 = calc_bert_score(sent1, sent2)
+for s1, s2, l, p, r, f1 in zip(sent1, sent2, labels, P, R, F1):
     bert_score_label = ''
     index += 1
-    P, R, F1 = calc_bert_score([s1], [s2])
-    # 閾値
-    th = 0.98
-    F1=F1[0]
-    if F1 > th:
+    
+    # f1=f1[0]
+    if f1 > th:
         bert_score_label = 'entail'
         # bert_scoreでentailと判断するかつ、実際に正解文である時
         if bert_score_label == l:
@@ -51,7 +53,7 @@ for s1, s2, l in zip(sent1, sent2, labels):
         if bert_score_label == l:
             tp_contradiction_bert_score += 1
 
-    print('【bertscore】>>>','問題番号：', index,'正解ラベル：',l,'予測：', bert_score_label,'数値：',F1)
+    print('【bertscore】>>>','問題番号：', index,'正解ラベル：',l,'予測：', bert_score_label,'数値：',f1)
 
 
 # =========================== 以下データ算出 =================================
@@ -80,6 +82,9 @@ def calc_f(pre=0, rec=0):
 
 # 結果の出力
 # 不正解問題数:164,正解問題数:41
+
+# 閾値
+print('閾値：',th)
 
 # 不正解文について
 print('tp_cont_bert_score', tp_contradiction_bert_score)
