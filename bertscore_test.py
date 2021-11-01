@@ -35,11 +35,27 @@ tp_entail_bert_score = 0
 th = 0.95
 print('閾値：',th)
 
+# rocファイル書き込み
+y_true = []
+y_pred = []
+
 
 P, R, F1 = calc_bert_score(sent1, sent2)
 for s1, s2, l, p, r, f1 in zip(sent1, sent2, labels, P, R, F1):
     bert_score_label = ''
     index += 1
+
+    # rocファイルへの書き込み
+    if l == 'entail':
+        y_true.append(1)
+        y_true.append(',')
+    else:
+        y_true.append(0)
+        y_true.append(',')
+
+    # rocファイルへの書き込み
+    y_pred.append(f1)
+    y_pred.append(',')
 
     # f1=f1[0]
     if f1 > th:
@@ -54,6 +70,14 @@ for s1, s2, l, p, r, f1 in zip(sent1, sent2, labels, P, R, F1):
             tp_contradiction_bert_score += 1
 
     print('【bertscore】>>>','問題番号：', index,'正解ラベル：',l,'予測：', bert_score_label,'数値：',f1)
+
+with open('bertscore_roc_data.txt','a') as f:
+    for d in y_true:
+        f.write("%s" % d)
+    f.write("\n")
+    for t in y_pred:
+        f.write("%s" % t)
+f.close()
 
 
 # =========================== 以下データ算出 =================================
