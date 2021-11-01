@@ -86,7 +86,7 @@ def calc_f(pre=0, rec=0):
 
 
 # 結果の出力
-# 不正解問題数:164,正解問題数:41
+# 不正解問題数:164,正解問題数:164
 
 # 閾値
 print('閾値：',th)
@@ -94,7 +94,7 @@ print('閾値：',th)
 # 不正解文について
 print('tp_cont_nli',tp_contradiction_nli)
 print('tp_ent_nli',tp_entail_nli)
-huseikai_pre = calc_precicsion(tp_contradiction_nli, 41 - tp_entail_nli)
+huseikai_pre = calc_precicsion(tp_contradiction_nli, 164 - tp_entail_nli)
 huseikai_rec = calc_recall(tp_contradiction_nli, 164 - tp_contradiction_nli)
 huseikai_f = calc_f(huseikai_pre, huseikai_rec)
 print('=============不正解文================')
@@ -102,7 +102,7 @@ print('誤り検出あり：', tp_contradiction_nli, '誤り検出無し；', 16
 
 # 正解文について
 seikai_pre = calc_precicsion(tp_entail_nli, 164 - tp_contradiction_nli)
-seikai_rec = calc_recall(tp_entail_nli, 41 - tp_entail_nli)
+seikai_rec = calc_recall(tp_entail_nli, 164 - tp_entail_nli)
 seikai_f = calc_f(seikai_pre, seikai_rec)
 print('=============正解文================')
-print('誤り検出あり：', 41 - tp_entail_nli, '誤り検出無し；', tp_entail_nli, '適合率；', seikai_pre , '再現率：', seikai_rec, 'F値', seikai_f)
+print('誤り検出あり：', 164 - tp_entail_nli, '誤り検出無し；', tp_entail_nli, '適合率；', seikai_pre , '再現率：', seikai_rec, 'F値', seikai_f)

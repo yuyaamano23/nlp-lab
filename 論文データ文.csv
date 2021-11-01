@@ -322,9 +322,10 @@ You should have told your teacher the truth.,You should have told the truth to t
 You must be tired. Please sit down in this chair.,"You must be tired. Please sit down on this chair.",entail
 We have to hurry so that we don't miss the bus.,"Hurry so that you may not miss the bus.",entail
 You don't have to speak so loudly.,You don't have to talk so loudly.,entail
-I'd like to meet you at the coffee shop.,I'd like to see you at the coffee shop.,entail
+I'd like to meet you at the coffee shop.,I'd like to meet you at the coffee shop.,entail
 What languages are spoken in Switzerland?,What language is spoken in Switzerland?,entail
 I sell vegetables in that store.,They sell vegetables at that store.,entail
 I was asked by a friend to give this letter to the woman.,I was asked by a friend of mine to hand this letter to the woman.,entail
+I asked my teacher to revise my essay.,I had my composition corrected by the teacher.
 
 

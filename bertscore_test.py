@@ -32,7 +32,7 @@ tp_contradiction_bert_score = 0
 tp_entail_bert_score = 0
 #bert_type = 'bert-base'
 # 閾値
-th = 0.99
+th = 0.95
 print('閾値：',th)
 
 
@@ -40,7 +40,7 @@ P, R, F1 = calc_bert_score(sent1, sent2)
 for s1, s2, l, p, r, f1 in zip(sent1, sent2, labels, P, R, F1):
     bert_score_label = ''
     index += 1
-    
+
     # f1=f1[0]
     if f1 > th:
         bert_score_label = 'entail'
@@ -81,7 +81,7 @@ def calc_f(pre=0, rec=0):
 
 
 # 結果の出力
-# 不正解問題数:164,正解問題数:41
+# 不正解問題数:164,正解問題数:164
 
 # 閾値
 print('閾値：',th)
@@ -89,7 +89,7 @@ print('閾値：',th)
 # 不正解文について
 print('tp_cont_bert_score', tp_contradiction_bert_score)
 print('tp_ent_bert_score', tp_entail_bert_score)
-huseikai_pre = calc_precicsion(tp_contradiction_bert_score, 41 - tp_entail_bert_score)
+huseikai_pre = calc_precicsion(tp_contradiction_bert_score, 164 - tp_entail_bert_score)
 huseikai_rec = calc_recall(tp_contradiction_bert_score, 164 - tp_contradiction_bert_score)
 huseikai_f = calc_f(huseikai_pre, huseikai_rec)
 print('=============不正解文================')
@@ -97,7 +97,7 @@ print('誤り検出あり：', tp_contradiction_bert_score, '誤り検出無し�
 
 # 正解文について
 seikai_pre = calc_precicsion(tp_entail_bert_score, 164 - tp_contradiction_bert_score)
-seikai_rec = calc_recall(tp_entail_bert_score, 41 - tp_entail_bert_score)
+seikai_rec = calc_recall(tp_entail_bert_score, 164 - tp_entail_bert_score)
 seikai_f = calc_f(seikai_pre, seikai_rec)
 print('=============正解文================')
-print('誤り検出あり：', 41 - tp_entail_bert_score, '誤り検出無：', tp_entail_bert_score, '適合率：', seikai_pre , '再現率：', seikai_rec, 'F値：', seikai_f)
+print('誤り検出あり：', 164 - tp_entail_bert_score, '誤り検出無：', tp_entail_bert_score, '適合率：', seikai_pre , '再現率：', seikai_rec, 'F値：', seikai_f)
