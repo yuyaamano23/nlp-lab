@@ -38,9 +38,21 @@ tp_entail_bert_sentence_bert = 0
 th = 0.87
 print('閾値：',th)
 
+# rocファイル書き込み
+y_true = []
+y_pred = []
+
 for s1, s2, l in zip(sent1, sent2, labels):
     sentence_bert_label = ''
     index += 1
+
+    # rocファイルへの書き込み
+    if l == 'entail':
+        y_true.append(1)
+        y_true.append(',')
+    else:
+        y_true.append(0)
+        y_true.append(',')
 
     # Two lists of sentences
     sentences1 = [s1]
@@ -52,6 +64,11 @@ for s1, s2, l in zip(sent1, sent2, labels):
 
     #Compute cosine-similarits
     cosine_scores = util.pytorch_cos_sim(embeddings1, embeddings2)
+
+    # rocファイルへの書き込み
+    y_pred.append(cosine_scores.item())
+    y_pred.append(',')
+
     if cosine_scores.item() > th:
         sentence_bert_label = 'entail'
         # sentence_bertでentailと判断するかつ、実際に正解文である時
@@ -64,6 +81,15 @@ for s1, s2, l in zip(sent1, sent2, labels):
             tp_contradiction_sentence_bert += 1
 
     print('【bertscore】>>>','問題番号：', index,'正解ラベル：',l,'予測：', sentence_bert_label, '数値：', cosine_scores.item())
+
+
+with open('sbert_roc_data.txt','a') as f:
+    for d in y_true:
+        f.write("%s" % d)
+    f.write("\n")
+    for t in y_pred:
+        f.write("%s" % t)
+f.close()
 
 
 # =========================== 以下データ算出 =================================
