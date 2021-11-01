@@ -35,6 +35,9 @@ tp_entail_nli = 0
 th = 0.95
 print('閾値：',th)
 
+# rocファイル書き込み
+y_pred = []
+
 
 # ファインチューニング済のモデルを読み込む
 model = BertNLIModel('./nli_model_acc0.8831943861332694.state_dict')
@@ -46,6 +49,11 @@ for s1, s2, l in zip(sent1, sent2, labels):
     nli_label_right, prob_right = model(sent_pairs_right)
     nli_label_left, prob_left = model(sent_pairs_left)
     nli_label = ''
+
+    # rocファイルへの書き込み
+    y_pred.append((prob_right[0][1].item() + prob_left[0][1]) / 2)
+    y_pred.append(',')
+
     # contradiction entail neutralの順番で2次元配列に格納されている
     if prob_right[0][1].item() > th and prob_left[0][1].item() > th:
         nli_label = 'entail'
@@ -59,6 +67,12 @@ for s1, s2, l in zip(sent1, sent2, labels):
             tp_contradiction_nli += 1
     index += 1
     print('【nli】>>>', '問題番号：', index, '正解ラベル：', l, '予測：', nli_label)
+
+
+with open('bertnli_roc_data.txt','a') as f:
+    for t in y_pred:
+        f.write("%s" % t)
+f.close()
 
 
 # =========================== 以下データ算出 =================================
