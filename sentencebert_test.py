@@ -83,13 +83,14 @@ for s1, s2, l in zip(sent1, sent2, labels):
     print('【bertscore】>>>','問題番号：', index,'正解ラベル：',l,'予測：', sentence_bert_label, '数値：', cosine_scores.item())
 
 
-with open('sbert_roc_data.txt','a') as f:
-    for d in y_true:
-        f.write("%s" % d)
-    f.write("\n")
-    for t in y_pred:
-        f.write("%s" % t)
-f.close()
+# roc抽出したいならここのコメントをはずす
+# with open('sbert_roc_data.txt','a') as f:
+#     for d in y_true:
+#         f.write("%s" % d)
+#     f.write("\n")
+#     for t in y_pred:
+#         f.write("%s" % t)
+# f.close()
 
 
 # =========================== 以下データ算出 =================================

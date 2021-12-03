@@ -71,13 +71,14 @@ for s1, s2, l, p, r, f1 in zip(sent1, sent2, labels, P, R, F1):
 
     print('【bertscore】>>>','問題番号：', index,'正解ラベル：',l,'予測：', bert_score_label,'数値：',f1)
 
-with open('bertscore_roc_data.txt','a') as f:
-    for d in y_true:
-        f.write("%s" % d)
-    f.write("\n")
-    for t in y_pred:
-        f.write("%s" % t)
-f.close()
+# roc抽出したいならここのコメントをはずす
+# with open('bertscore_roc_data.txt','a') as f:
+#     for d in y_true:
+#         f.write("%s" % d)
+#     f.write("\n")
+#     for t in y_pred:
+#         f.write("%s" % t)
+# f.close()
 
 
 # =========================== 以下データ算出 =================================
