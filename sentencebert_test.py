@@ -22,7 +22,7 @@ def load_dataset(filepath, encoding='utf-8'):
     return a, b, c
 
 
-sent1, sent2, labels = load_dataset('./論文データ文.csv')
+sent1, sent2, labels = load_dataset('./中間発表論文データ.csv')
 
 # 問題番号
 index = 0
@@ -118,22 +118,22 @@ def calc_f(pre=0, rec=0):
 
 
 # 結果の出力
-# 不正解問題数:164,正解問題数:164
+# 不正解問題数:y_true.count(0),正解問題数:y_true.count(1)
 
 # 閾値
 print('閾値：',th)
 # 不正解文について
 print('tp_cont_bert_score', tp_contradiction_sentence_bert)
 print('tp_ent_bert_score', tp_entail_bert_sentence_bert)
-huseikai_pre = calc_precicsion(tp_contradiction_sentence_bert, 164 - tp_entail_bert_sentence_bert)
-huseikai_rec = calc_recall(tp_contradiction_sentence_bert, 164 - tp_contradiction_sentence_bert)
+huseikai_pre = calc_precicsion(tp_contradiction_sentence_bert, y_true.count(1) - tp_entail_bert_sentence_bert)
+huseikai_rec = calc_recall(tp_contradiction_sentence_bert, y_true.count(0) - tp_contradiction_sentence_bert)
 huseikai_f = calc_f(huseikai_pre, huseikai_rec)
 print('=============不正解文================')
-print('誤り検出あり：', tp_contradiction_sentence_bert, '誤り検出無し；', 164 - tp_contradiction_sentence_bert, '適合率；', huseikai_pre , '再現率：', huseikai_rec, 'F値', huseikai_f)
+print('誤り検出あり：', tp_contradiction_sentence_bert, '誤り検出無し；', y_true.count(0) - tp_contradiction_sentence_bert, '適合率；', huseikai_pre , '再現率：', huseikai_rec, 'F値', huseikai_f)
 
 # 正解文について
-seikai_pre = calc_precicsion(tp_entail_bert_sentence_bert, 164 - tp_contradiction_sentence_bert)
-seikai_rec = calc_recall(tp_entail_bert_sentence_bert, 164 - tp_entail_bert_sentence_bert)
+seikai_pre = calc_precicsion(tp_entail_bert_sentence_bert, y_true.count(0) - tp_contradiction_sentence_bert)
+seikai_rec = calc_recall(tp_entail_bert_sentence_bert, y_true.count(1) - tp_entail_bert_sentence_bert)
 seikai_f = calc_f(seikai_pre, seikai_rec)
 print('=============正解文================')
-print('誤り検出あり：', 164 - tp_entail_bert_sentence_bert, '誤り検出無し；', tp_entail_bert_sentence_bert, '適合率；', seikai_pre , '再現率：', seikai_rec, 'F値', seikai_f)
+print('誤り検出あり：', y_true.count(1) - tp_entail_bert_sentence_bert, '誤り検出無し；', tp_entail_bert_sentence_bert, '適合率；', seikai_pre , '再現率：', seikai_rec, 'F値', seikai_f)
