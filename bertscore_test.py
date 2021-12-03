@@ -32,7 +32,7 @@ tp_contradiction_bert_score = 0
 tp_entail_bert_score = 0
 #bert_type = 'bert-base'
 # 閾値
-th = 0.95
+th = 0.96
 print('閾値：',th)
 
 # rocファイル書き込み
@@ -124,4 +124,4 @@ seikai_pre = calc_precicsion(tp_entail_bert_score, 164 - tp_contradiction_bert_s
 seikai_rec = calc_recall(tp_entail_bert_score, 164 - tp_entail_bert_score)
 seikai_f = calc_f(seikai_pre, seikai_rec)
 print('=============正解文================')
-print('誤り検出あり：', 164 - tp_entail_bert_score, '誤り検出無：', tp_entail_bert_score, '適合率：', seikai_pre , '再現率：', seikai_rec, 'F値：', seikai_f)
+print('誤り検出あり：', 164 - tp_entail_bert_score, '誤り検出無し：', tp_entail_bert_score, '適合率：', seikai_pre , '再現率：', seikai_rec, 'F値：', seikai_f)

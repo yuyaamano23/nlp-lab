@@ -35,7 +35,7 @@ tp_entail_bert_sentence_bert = 0
 #bert_type = 'bert-base'
 
 # 閾値
-th = 0.87
+th = 0.869
 print('閾値：',th)
 
 # rocファイル書き込み
