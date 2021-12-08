@@ -1,0 +1,26 @@
+S,T,L
+"If I have more money, I can stay one more night.","If I had more money, I could stay one more night.",contradiction
+"We are staying in a hotel, we will look for an apartment.","We are living in a hotel for the time being, but we are going to find an apartment pretty soon.",contradiction
+"It has been increasing foreign people who visited Japan.","Every year more and more foreign tourists are visiting Japan.",contradiction
+"Recently, many people finish the tasks by using cell phones.","Nowadays many people get almost everything done by using their cellphones.",entail
+"The cabinet rate has been increasing this two months.","The approval rating for the Cabinet has been rising sharply for the last two months.",contradiction
+"I walk about thirty minutes before breakfast.","I always go for a walk for about half an hour before breakfast.",entail
+"I haven’t decided yet, I’m thinking that I retire company.","I have not made up my mind yet, but I’m thinking of leaving the company.",contradiction
+"I have researched to come this gland, not for spending vacation.","I’ve come here to make a survey, not to spend my vacation.",contradiction
+"I have been waiting since this morning, he hasn’t come,","I’ve been waiting since this morning, but he still hasn’t come.",entail
+"Living in Canada didn’t cost that I had thought.","Living in Canada was not as expensive as I thought it would be.",entail
+"When we arrived the airport, the airplane had already taken off.","When we got to the airport, the airplane had already left.",entail
+"If I had harried up last night, I could take on the last train.","If I had hurried last night, I could have caught the last train.",entail
+"If I listen to speech, I can tell how they are.","If you listen to a person even for a little white, you can get a good idea of what kind of person he or she is",contradiction
+"I wish I can read Shakespeare written in original language.","I wish I could read Shakespeare in the original.",entail
+"Please tell me whether the Shinkansen which leaves 9:am stopes at Shizuoka?","Could you tell me whether the 9 a.m Shinkansen stopes at Shizuoka?",entail
+"A man and a woman who marry new leave on the marring trip at the 5:30 express.","the bride and groom are leaving on their honeymoon on the 5:30 express.",contradiction
+"We are staying in a hotel, we will look for an apartment.","We are living in a hotel for the time being, but we are going to find an apartment pretty soon.",contradiction
+"If he absent from school, he will recover his cold a few days.","If he stays home from school for a few days, he will get over his cold.",entail
+"She asked me when you would leave Japan.","She asked me when I would leave Japan.",entail
+"It has been increasing foreign people who visited Japan.","Every year more and more foreign tourists are visiting Japan.",entail
+"I went swimming in Enoshima two summer ago.","I went swimming in Enoshima the summer before last.",entail
+"If I hurried last night, I could caught the last train","If I had hurried last night, I could have caught the last train",entail
+"I play the guitar.","I played the guitar.",entail
+"When we got to the airport, the airplane had already left.","When we got to the airport, the airplane left.",entail
+"you were able to get a good idea of what kind of person he or she is","you can get a good idea of what kind of person he or she is",entail

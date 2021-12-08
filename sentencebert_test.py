@@ -2,6 +2,8 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer, util
 
 model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
+# model = SentenceTransformer('all-MiniLM-L6-v2')
+
 
 # csvデータセットを整形
 def load_dataset(filepath, encoding='utf-8'):
@@ -22,7 +24,7 @@ def load_dataset(filepath, encoding='utf-8'):
     return a, b, c
 
 
-sent1, sent2, labels = load_dataset('./中間発表論文データ.csv')
+sent1, sent2, labels = load_dataset('./自己採点.csv')
 
 # 問題番号
 index = 0
@@ -144,6 +146,8 @@ for th in th_input_list:
     seikai_f = calc_f(seikai_pre, seikai_rec)
     print('=============正解文================')
     print('誤り検出あり：', y_true.count(1) - tp_entail_sentence_bert, '誤り検出無し；', tp_entail_sentence_bert, '適合率；', seikai_pre , '再現率：', seikai_rec, 'F値', seikai_f)
+
+    print("===================================================================================")
 
 
 
