@@ -5,8 +5,8 @@ def load_dataset(filepath, encoding='utf-8'):
     # read_csv()は区切り文字がカンマ,でread_table()は区切り文字がタブ\t。
     df = pd.read_csv(filepath, encoding=encoding)
     # 意図せず\sが出てきてしまっていたので消す
-    df['S'] = df['S'].replace("\'s", '')
-    df['L'] = df['L'].replace("\'s", '')
+    df['採点フラグ'] = df['採点フラグ'].replace("\'s", '')
+    df['0のみ不正解とする'] = df['0のみ不正解とする'].replace("\'s", '')
     a = []
     b = []
     c = []
@@ -21,11 +21,11 @@ def load_dataset(filepath, encoding='utf-8'):
         c.append(d3)
     for d4 in df['111のみ正解とする']:
         d.append(d4)
-    for d5 in df['%1%のみ正解とする']:
-        f.append(d5)
+    for d5 in df['010のみ正解とする']:
+        e.append(d5)
     for d6 in df['0のみ不正解とする']:
-        g.append(d6)
-    return a, b, c, d, e, f, g
+        f.append(d6)
+    return a, b, c, d, e, f
 
 
 flag, JEscore, EEscore, L111, L010, L000 = load_dataset('./アウトソーシング検証用データ.csv')
@@ -34,18 +34,10 @@ flag, JEscore, EEscore, L111, L010, L000 = load_dataset('./アウトソーシン
 # 問題番号
 index = 0
 # 問題数
-acc = len(sent1)
+acc = len(flag)
 print('len(acc)', acc)
 
-#bert_type = 'bert-base'
 
-
-# データセットの計算結果格納2次元配列
-dataset_output = []
-# [正解ラベル,SBERTcos類似度],
-# イメージ例
-# ["entail",0.890904032940],
-# ["contradiction",0.86519589198]]
 
 # 閾値を格納する配列
 th_input_list = []
@@ -55,42 +47,6 @@ while th_input != '':
     if th_input == '':
         break
     th_input_list.append(float(th_input))
-
-# rocファイル書き込み用の変数定義と標準出力
-roc_output_option = input("ROC用のデータを出力しますか?(Y/N)")
-y_true = []
-y_pred = []
-
-for s1, s2, l in zip(sent1, sent2, labels):
-    index += 1
-
-    # rocファイルへの書き込み用変数に要素追加
-    if l == 'entail':
-        y_true.append(1)
-        y_true.append(',')
-    else:
-        y_true.append(0)
-        y_true.append(',')
-
-    # Two lists of sentences
-    sentences1 = [s1]
-    sentences2 = [s2]
-
-    #Compute embedding for both lists
-    embeddings1 = model.encode(sentences1, convert_to_tensor=True)
-    embeddings2 = model.encode(sentences2, convert_to_tensor=True)
-
-    #Compute cosine-similarits
-    cosine_scores = util.pytorch_cos_sim(embeddings1, embeddings2)
-
-    # rocファイルへの書き込み用変数に要素追加
-    y_pred.append(cosine_scores.item())
-    y_pred.append(',')
-
-    # データセットの計算結果を2次元配列に格納
-    dataset_output.append([l,cosine_scores.item()])
-
-    print('【',index,'】','正解ラベル：',l,'  cos類似度：',cosine_scores.item())
 
 
 # =========================== 以下分析データ算出 =================================
@@ -118,20 +74,25 @@ def calc_f(pre=0, rec=0):
 
 # =================================================================================
 
+# ここでどのフラグを採用するか選択
+L = L111
+
 # 標準入力されたそれぞれの閾値で判定
 for th in th_input_list:
-    # bert_scoreでの不正解、正解それぞれについてのtpを初期化
+    # sbertでの不正解、正解それぞれについてのtpを初期化
     tp_contradiction_sentence_bert = 0
     tp_entail_sentence_bert = 0
     # データセットの計算結果を2次元配列を展開
-    for arr in dataset_output:
+    index = 0
+    for i in JEscore:
         # sentence_bertでentailと予測するかつ、実際に正解文である時
-        if arr[1] > th  and arr[0] == 'entail':
+        if JEscore[index] > th  and L[index] == 1:
             tp_entail_sentence_bert += 1
 
         # sentence_bertでcontradictionと判断するかつ、実際に不正解文である時
-        elif arr[1] <= th and arr[0] == 'contradiction':
+        elif JEscore[index] <= th and L[index] == 0:
             tp_contradiction_sentence_bert += 1
+        index += 1
 
     # 結果の出力
     print('閾値：',th)
@@ -139,29 +100,18 @@ for th in th_input_list:
     # 不正解文について
     print('tp_entail_sbert', tp_entail_sentence_bert)
     print('tp_contradiction_sbert', tp_contradiction_sentence_bert)
-    huseikai_pre = calc_precicsion(tp_contradiction_sentence_bert, y_true.count(1) - tp_entail_sentence_bert)
-    huseikai_rec = calc_recall(tp_contradiction_sentence_bert, y_true.count(0) - tp_contradiction_sentence_bert)
+    huseikai_pre = calc_precicsion(tp_contradiction_sentence_bert, L.count(1) - tp_entail_sentence_bert)
+    huseikai_rec = calc_recall(tp_contradiction_sentence_bert, L.count(0) - tp_contradiction_sentence_bert)
     huseikai_f = calc_f(huseikai_pre, huseikai_rec)
     print('=============不正解文================')
-    print('誤り検出あり：', tp_contradiction_sentence_bert, '誤り検出無し；', y_true.count(0) - tp_contradiction_sentence_bert, '適合率；', huseikai_pre , '再現率：', huseikai_rec, 'F値', huseikai_f)
+    print('誤り検出あり：', tp_contradiction_sentence_bert, '誤り検出無し；', L.count(0) - tp_contradiction_sentence_bert, '適合率；', huseikai_pre , '再現率：', huseikai_rec, 'F値', huseikai_f)
 
     # 正解文について
-    seikai_pre = calc_precicsion(tp_entail_sentence_bert, y_true.count(0) - tp_contradiction_sentence_bert)
-    seikai_rec = calc_recall(tp_entail_sentence_bert, y_true.count(1) - tp_entail_sentence_bert)
+    seikai_pre = calc_precicsion(tp_entail_sentence_bert, L.count(0) - tp_contradiction_sentence_bert)
+    seikai_rec = calc_recall(tp_entail_sentence_bert, L.count(1) - tp_entail_sentence_bert)
     seikai_f = calc_f(seikai_pre, seikai_rec)
     print('=============正解文================')
-    print('誤り検出あり：', y_true.count(1) - tp_entail_sentence_bert, '誤り検出無し；', tp_entail_sentence_bert, '適合率；', seikai_pre , '再現率：', seikai_rec, 'F値', seikai_f)
+    print('誤り検出あり：', L.count(1) - tp_entail_sentence_bert, '誤り検出無し；', tp_entail_sentence_bert, '適合率；', seikai_pre , '再現率：', seikai_rec, 'F値', seikai_f)
 
     print("===================================================================================")
 
-
-
-# roc抽出したいなら (Y/N) Yを入力
-if roc_output_option == 'Y':
-    with open('sbert_roc_data.txt','a') as f:
-        for d in y_true:
-            f.write("%s" % d)
-        f.write("\n")
-        for t in y_pred:
-            f.write("%s" % t)
-    f.close()
