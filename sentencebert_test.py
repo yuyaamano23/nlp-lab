@@ -1,8 +1,8 @@
 import pandas as pd
 from sentence_transformers import SentenceTransformer, util
 
-model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
-# model = SentenceTransformer('all-MiniLM-L6-v2')
+# model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
 
 # csvデータセットを整形
