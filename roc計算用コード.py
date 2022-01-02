@@ -2,7 +2,7 @@ from sklearn import metrics
 import matplotlib.pyplot as plt
 import numpy as np
 
-test_y = []
+test_y = [0,1,0]
 predict_y = []
 
 
@@ -13,7 +13,7 @@ fpr, tpr, thresholds = metrics.roc_curve(test_y, predict_y)
 auc = metrics.auc(fpr, tpr)
 
 # ROC曲線をプロット
-plt.plot(fpr, tpr, label='ROC curve (area = %.2f)'%auc)
+plt.plot(fpr, tpr, label='ROC curve (area = %.4f)'%auc)
 plt.legend()
 plt.title('ROC curve')
 plt.xlabel('False Positive Rate')
