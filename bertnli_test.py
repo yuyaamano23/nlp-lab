@@ -20,7 +20,7 @@ def load_dataset(filepath, encoding='utf-8'):
     return a, b, c
 
 
-sent1, sent2, labels = load_dataset('./論文データ文.csv')
+sent1, sent2, labels = load_dataset('中間発表論文データ.csv')
 
 # 問題番号
 index = 0
