@@ -1,0 +1,501 @@
+解答文,正答文,ラベル,ラベルの値(解答←正答)
+I uselly taking walk about 30 min.before breakfast.,I always go for a walk for about half an hour before breakfast.,entail,0.9924051
+I make it a rule to take a walk for about half an hour before breakfast.,I always go for a walk for about half an hour before breakfast.,entail,0.9823783
+I always take a walk for 30 minutes before breakfast.,I always go for a walk for about half an hour before breakfast.,entail,0.9884165
+I am always going to take a walk 30minutes before breakfast.,I always go for a walk for about half an hour before breakfast.,contradiction,0.9087694
+I make it a rule to take a walk for half an hour before every breakfast.,I always go for a walk for about half an hour before breakfast.,entail,0.68147993
+"I`m thinking about to gone office,no deside yet.","I have not made up my mind yet, but I’m thinking of leaving the company.",contradiction,0.9829495
+"I haven't decided yet, but I'm thinking of quitting the company.","I have not made up my mind yet, but I’m thinking of leaving the company.",entail,0.99819237
+"I haven't decided yet, but I am thinking to quit my job.","I have not made up my mind yet, but I’m thinking of leaving the company.",entail,0.9897629
+I don't dicided yet I am thinking of quit the company. ,"I have not made up my mind yet, but I’m thinking of leaving the company.",entail,0.99734074
+"I have not yet decided, but I would like to leave the company.","I have not made up my mind yet, but I’m thinking of leaving the company.",entail,0.99771595
+"No staying hollyday,to study coming here.","I’ve come here to make a survey, not to spend my vacation.",contradiction,0.95837176
+"I came here to do some reserch, not to spend holiday.","I’ve come here to make a survey, not to spend my vacation.",entail,0.9959698
+"I don't spend the holidays, I came here to do some research.","I’ve come here to make a survey, not to spend my vacation.",entail,0.9980531
+"I came here to do some research, not to spend my holidays.","I’ve come here to make a survey, not to spend my vacation.",entail,0.9977932
+"I came here not to live a holiday,the way to a search.","I’ve come here to make a survey, not to spend my vacation.",entail,0.99743515
+"I have waitting for him this morning,He doesn`t come.","I’ve been waiting since this morning, but he still hasn’t come.",entail,0.9973986
+"I have been waiting since this morning, but he has not shown up yet.","I’ve been waiting since this morning, but he still hasn’t come.",entail,0.9981692
+"I have been waiting since this morning, he has not turned up yet.","I’ve been waiting since this morning, but he still hasn’t come.",entail,0.9982823
+He has not appeared still even though I have waited from this morning.,"I’ve been waiting since this morning, but he still hasn’t come.",entail,0.99776804
+"Although I wait him morning,he do not appear yet ","I’ve been waiting since this morning, but he still hasn’t come.",entail,0.99831957
+I did't spend money that I thought  ,Living in Canada was not as expensive as I thought it would be.,entail,0.932769
+Life in Canada was not as expensive as I thoght.,Living in Canada was not as expensive as I thought it would be.,entail,0.99795747
+Living in Canada didn't cost much than I had expected.,Living in Canada was not as expensive as I thought it would be.,entail,0.9974492
+I did not consume the money for Canadian life rather than I predicted before.,Living in Canada was not as expensive as I thought it would be.,entail,0.94441444
+Living in Canada do not cost money than I think.,Living in Canada was not as expensive as I thought it would be.,entail,0.9888915
+The plane has gone when we arrived at airport.,"When we got to the airport, the airplane had already left.",entail,0.99837947
+"When we arrived at the airport, the plane had already taken off.","When we got to the airport, the airplane had already left.",entail,0.9980203
+"When we arrived the airport, the aiplain have already taken off.","When we got to the airport, the airplane had already left.",entail,0.99430096
+"When I arrived the airport, the flight had already taken off. ","When we got to the airport, the airplane had already left.",entail,0.99672407
+The airplane have already departed when we arrived at the airport.,"When we got to the airport, the airplane had already left.",entail,0.99828404
+"If I had money,I would stay one more night.","If I had more money, I could stay one more night.",entail,0.9977915
+"If I have money , I stay one more night.","If I had more money, I could stay one more night.",entail,0.96854377
+"If I have money, I would stay one more night.","If I had more money, I could stay one more night.",entail,0.9975189
+If I have money I will stay one more night.,"If I had more money, I could stay one more night.",entail,0.9911917
+I would like to stay one more night if I have money.,"If I had more money, I could stay one more night.",entail,0.9980082
+"If I was hurr up, I made to ride on the last train last night.","If I had hurried last night, I could have caught the last train.",contradiction,0.91874677
+I would be on time last night if I go hurrily.,"If I had hurried last night, I could have caught the last train.",contradiction,0.4396847
+"Last night, if I had been in a rush, I could have caught the last train","If I had hurried last night, I could have caught the last train.",entail,0.9978454
+"Last night, if I harried up, I were able to take the train.","If I had hurried last night, I could have caught the last train.",entail,0.99681014
+I have riden by last train last night.,"If I had hurried last night, I could have caught the last train.",contradiction,0.978823
+"Please tell me,Will the fast train  arrive at Shizuoka from Tokyo 9am?",Could you tell me whether the 9 a.m Shinkansen stopes at Shizuoka?,neutral,0.9931933
+Please tell me if the Shinkansen leaving at 9 a.m. stops at Shizuoka.,Could you tell me whether the 9 a.m Shinkansen stopes at Shizuoka?,entail,0.8608369
+I would like to know if the high speed train departing at 9am stop by Shizuoka.,Could you tell me whether the 9 a.m Shinkansen stopes at Shizuoka?,entail,0.9960974
+Could you tell me if the Shinkansen departing at 9am will stop in Shizuoka.,Could you tell me whether the 9 a.m Shinkansen stopes at Shizuoka?,entail,0.98966813
+Could you please teach me whether Shinkansen departing at 9 AM stop Shizuoka or not ?,Could you tell me whether the 9 a.m Shinkansen stopes at Shizuoka?,entail,0.99513286
+Bride and groom go honeymoon by express at 5:30.,the bride and groom are leaving on their honeymoon on the 5:30 express.,entail,0.9982937
+The bride and har hasband take the 5:30 express train for their haneymoon.,the bride and groom are leaving on their honeymoon on the 5:30 express.,contradiction,0.92268264
+The bloom and bride will be going to their honeymoon on the express train five thirty ,the bride and groom are leaving on their honeymoon on the 5:30 express.,entail,0.98703754
+The bride and groom will go on their honeymoon on the express train at 5:30.,the bride and groom are leaving on their honeymoon on the 5:30 express.,entail,0.99818474
+New merring men and women are leaving travel of marring by special train half to 5 o'clock.,the bride and groom are leaving on their honeymoon on the 5:30 express.,contradiction,0.65883774
+We have been living at hotel until finding some apart anyday.  ,"We are living in a hotel for the time being, but we are going to find an apartment pretty soon.",neutral,0.9803796
+"We are living in a hotel for long time, but will find an apartment after a while.","We are living in a hotel for the time being, but we are going to find an apartment pretty soon.",entail,0.9954152
+"We've been staying hotel for the time being, however we are planning to find a room for rent in the near future.","We are living in a hotel for the time being, but we are going to find an apartment pretty soon.",entail,0.9970693
+"We live in a hotel for a while, we would find an apartment.","We are living in a hotel for the time being, but we are going to find an apartment pretty soon.",entail,0.99749905
+We will find a manshon ,"We are living in a hotel for the time being, but we are going to find an apartment pretty soon.",neutral,0.78986365
+"I will diside absent scool and stay home,it will be recove from cold couple of days.","If he stays home from school for a few days, he will get over his cold.",neutral,0.8053945
+"If he stays home from school, he will get over his cold in a few days.","If he stays home from school for a few days, he will get over his cold.",entail,0.99825376
+He must recover from sick in a few days if he absents from school and stay in his house,"If he stays home from school for a few days, he will get over his cold.",entail,0.99584407
+If he will be absent from school to stay home. his cold is must be cured.,"If he stays home from school for a few days, he will get over his cold.",neutral,0.47080982
+"If he is absent from school and stays home, he must be able to get over his cold within a few days.","If he stays home from school for a few days, he will get over his cold.",entail,0.9955635
+Foreign tourist to visit Japan increase year by year.,Every year more and more foreign tourists are visiting Japan.,entail,0.9951964
+The number of foreigners visiting Japan is increasing year by year.,Every year more and more foreign tourists are visiting Japan.,entail,0.9961236
+The number of foreign tourists who visit Japan is increasing.,Every year more and more foreign tourists are visiting Japan.,entail,0.99521047
+The number of visitors from foreigen countries to Japan is increasing year by year.,Every year more and more foreign tourists are visiting Japan.,entail,0.9955456
+It is  yearly incline that other country tourists visit Japan.,Every year more and more foreign tourists are visiting Japan.,entail,0.98457587
+"I went to Enoshima for the swimming the summer before last,",I went swimming in Enoshima the summer before last.,entail,0.996536
+I went to Enoshima for sea bathing in summer two years ago.,I went swimming in Enoshima the summer before last.,neutral,0.73994994
+I went to Enoshima to swim in the summer before last year.,I went swimming in Enoshima the summer before last.,entail,0.9915959
+"In the summmer two years ago,I went bathing to Enoshima beach.",I went swimming in Enoshima the summer before last.,contradiction,0.5877782
+I went to swin at Enoshima the summer before last year.,I went swimming in Enoshima the summer before last.,contradiction,0.6947454
+"These days, many people do most of their business with their cellphones.",Nowadays many people get almost everything done by using their cellphones.,entail,0.99559563
+"In these days, a lot of people do every thing with cell phone.",Nowadays many people get almost everything done by using their cellphones.,entail,0.99820757
+"These days, many people use their mobile phones to do most work they have to.",Nowadays many people get almost everything done by using their cellphones.,entail,0.9968617
+"In these days, most of the things can be done by mobile phones.",Nowadays many people get almost everything done by using their cellphones.,entail,0.99750817
+"Recently,many people do most of their work by using thier cellphone.",Nowadays many people get almost everything done by using their cellphones.,entail,0.99265975
+The Cabinet's approval rating has soared sicce the past two months.,The approval rating for the Cabinet has been rising sharply for the last two months.,entail,0.99838555
+Number of person agree with minister increased in this two month.,The approval rating for the Cabinet has been rising sharply for the last two months.,entail,0.9973449
+"In the last two months, the rate of support for the government increased rapidly.",The approval rating for the Cabinet has been rising sharply for the last two months.,entail,0.9951799
+The supportive rate for the government has surged in these two months.,The approval rating for the Cabinet has been rising sharply for the last two months.,entail,0.9973767
+The rating of is increased rapidly in this two months.,The approval rating for the Cabinet has been rising sharply for the last two months.,entail,0.9978719
+"What do you do first,when you wake up the morning?",What is the first thing you do after you get up?,neutral,0.98439664
+What do you do first when you get up.,What is the first thing you do after you get up?,entail,0.9607518
+What do you do first when you wake up in the morning?,What is the first thing you do after you get up?,contradiction,0.6137147
+What to do first in the morning.,What is the first thing you do after you get up?,entail,0.8653993
+What do you do first when you wake up in the morning?,What is the first thing you do after you get up?,contradiction,0.6137147
+It is better that is secret.,You should leave it unsaid.,neutral,0.9876522
+You had better keep it a secret.,You should leave it unsaid.,entail,0.9692217
+You had better keep it a secret.,You should leave it unsaid.,entail,0.9692217
+It's better to keep it a secret.,You should leave it unsaid.,entail,0.9165066
+It is better for you to keep it secret.,You should leave it unsaid.,entail,0.7915788
+The minister had no choice but to take back what he had said.,The minister had to admit that what he said was wrong.,neutral,0.9923515
+The minister had to withdrae his comment.,The minister had to admit that what he said was wrong.,entail,0.9837863
+The minister had no way except taking back what he said.,The minister had to admit that what he said was wrong.,contradiction,0.91479194
+The minister had to admit what he said was wrong.,The minister had to admit that what he said was wrong.,entail,0.9980379
+The minister forced to cancel previous opinion.,The minister had to admit that what he said was wrong.,neutral,0.97609335
+"After I lost her, I realized that there was something money couldn't buy for the first time.",I had thought I could buy anything with money until I lost her.,entail,0.8993946
+I knew there is a thing not to buy money to lose her.,I had thought I could buy anything with money until I lost her.,contradiction,0.98501784
+I noticed of that there is something that cannnot buy in the first time after breaking up with my girlfriend.,I had thought I could buy anything with money until I lost her.,neutral,0.99614066
+"Only when I had lost her, I knew that there are things that I can't buy with money.",I had thought I could buy anything with money until I lost her.,entail,0.8012678
+I lost her and this was the first time for me to find out that there was cashless.,I had thought I could buy anything with money until I lost her.,neutral,0.9908131
+"Recentlly,It be abel to take abroad trips cheeply couse preousiou en.","Thanks to the strong yen, we can travel abroad for less money these days.",contradiction,0.9744547
+"Thanks to the increase of yen's value, we can travel abroad at a lower price.","Thanks to the strong yen, we can travel abroad for less money these days.",entail,0.99542
+"Thanks to the strong yen, you can enjoy traveling abroad in low prices recently.","Thanks to the strong yen, we can travel abroad for less money these days.",entail,0.9896534
+"Thanks to the strong yen, it has become possible to travel abroad cheaply in these days.","Thanks to the strong yen, we can travel abroad for less money these days.",entail,0.99678206
+"Recently,someone can go abroad to expensive yen.","Thanks to the strong yen, we can travel abroad for less money these days.",entail,0.98290986
+Please help me to carry this box.,Could you give me a hand with this box?,entail,0.9973182
+Could you help me carry yhis box.,Could you give me a hand with this box?,entail,0.9945555
+Could you give me a hand to bring this box.,Could you give me a hand with this box?,entail,0.9974482
+Could you please help us to bring this box ?,Could you give me a hand with this box?,entail,0.9891433
+please help me to carrying the box.,Could you give me a hand with this box?,entail,0.9968899
+"When I was shopping ,I met old friend,Jim.","I was shopping I ran into Jim, an old friend of mine.",entail,0.9983866
+"While I went shopping at that store, Imet an old friend,Jim.","I was shopping I ran into Jim, an old friend of mine.",entail,0.99308044
+"I was shopping at that store, I met old friend Jim. ","I was shopping I ran into Jim, an old friend of mine.",entail,0.9947737
+"I met Jim who is my old friend, when I bought someone in it's store.","I was shopping I ran into Jim, an old friend of mine.",neutral,0.9848616
+"When I was shopping this store,I met Jim of old friend.","I was shopping I ran into Jim, an old friend of mine.",entail,0.99431425
+Fire men came at burns place 30 minuts later.,The fire brigade arrived 30 minutes after the fire broke out.,entail,0.867197
+Firefighters arrived 30 minutes after the fire accident broke out.,The fire brigade arrived 30 minutes after the fire broke out.,entail,0.9846325
+The firefighters arrived after the fire got started.,The fire brigade arrived 30 minutes after the fire broke out.,entail,0.97937185
+Firemen reached 30 minitues after the fire happened.,The fire brigade arrived 30 minutes after the fire broke out.,neutral,0.9976593
+it have arrived at 30 minutes later since causing  fire.,The fire brigade arrived 30 minutes after the fire broke out.,entail,0.99278307
+Mr.White worked hard to feed his four family.,Mr. White worked hard to support a family of four.,neutral,0.9857195
+Mr. White worked hard in order to taking care of his family of 4.,Mr. White worked hard to support a family of four.,entail,0.9946122
+"Mr,White worked hardly to feed his family of 4. ",Mr. White worked hard to support a family of four.,contradiction,0.9997054
+White-san worked hard to support his family of four.,Mr. White worked hard to support a family of four.,entail,0.99273866
+"Mr,white worked hard to grow four person family.",Mr. White worked hard to support a family of four.,neutral,0.99019986
+I walked softly so that the baby wouldn't wake up.,I crept around so as not to wake up the baby.,neutral,0.9145095
+I walked slowly not to wake up baby.,I crept around so as not to wake up the baby.,entail,0.9878775
+I walked slowly to not wake the baby up.,I crept around so as not to wake up the baby.,entail,0.98909855
+I walked quietly not to awake the baby.,I crept around so as not to wake up the baby.,entail,0.9910891
+I walked quietly so that the baby wouldn't wake up.,I crept around so as not to wake up the baby.,entail,0.9884277
+This song make me remember to presious memory when we had stayed N.Y.,"When I hear this song, I’m always reminded of the days when we lived in New York.",entail,0.9963194
+"When I was listen to the music, I recognized the days in New York.","When I hear this song, I’m always reminded of the days when we lived in New York.",entail,0.99690765
+This song always reminds me of the day we epend in New York.,"When I hear this song, I’m always reminded of the days when we lived in New York.",entail,0.99792
+"Whenever I hear this song, which reminds me the days we spend in New York.","When I hear this song, I’m always reminded of the days when we lived in New York.",entail,0.99818194
+"Whenever I hear this song, I remember the days I spent in New York.","When I hear this song, I’m always reminded of the days when we lived in New York.",entail,0.9979722
+It is strang that no tenderlling own home.,Most people love their hometown.,contradiction,0.9986474
+There is rarely noone who doesn't have even a little love towards their own hometown.,Most people love their hometown.,neutral,0.9948021
+Hardly ever don't feel emotions  own town.,Most people love their hometown.,contradiction,0.5192554
+Few people feel no affection for their hometown.,Most people love their hometown.,contradiction,0.9997135
+It is rare person that one's hometown do not feel in love.,Most people love their hometown.,neutral,0.9818076
+"If you want to pass exam of uni, you should be sutdy hard.",Whether you pass the university entrance exam or not will depend on how much work you do over the coming year.,neutral,0.9837338
+It depends on the amount of study you do in the next one year whether you pass the exam of college.,Whether you pass the university entrance exam or not will depend on how much work you do over the coming year.,entail,0.9802904
+Whether you pass the entrance exam for the university or not will be up to how mucu you study hard next one year.,Whether you pass the university entrance exam or not will depend on how much work you do over the coming year.,neutral,0.9953265
+Whether you pass the test for univercity depends on your amount of study over the next year.,Whether you pass the university entrance exam or not will depend on how much work you do over the coming year.,entail,0.99362284
+you do amount of the studying whether to pass university.,Whether you pass the university entrance exam or not will depend on how much work you do over the coming year.,entail,0.97881794
+Washing your hands carefully is the best way to stop the spread of germs.,The best way to prevent the spread of germs is to wash your hands thoroughly.,entail,0.9972385
+to wash hands politely is the best way to stop movement of bacteria. ,The best way to prevent the spread of germs is to wash your hands thoroughly.,neutral,0.98502696
+Washing hands cleanly is the best way to prevent to not spread virus.,The best way to prevent the spread of germs is to wash your hands thoroughly.,entail,0.99145424
+Washing your hands neatly is the best way to curb the spreading of germs.,The best way to prevent the spread of germs is to wash your hands thoroughly.,entail,0.9973998
+It is the best way to wash hands many times in order to avoid spreading the virus. ,The best way to prevent the spread of germs is to wash your hands thoroughly.,neutral,0.99070287
+Cheap sales are not in the interest of all consumers.,Not all bargains mean saving for the consumers.,entail,0.92641056
+To sale is not necessary benefit of all customer.,Not all bargains mean saving for the consumers.,neutral,0.4053862
+Not all consumers think that cheap sales will be benefit.,Not all bargains mean saving for the consumers.,entail,0.8860491
+Bargains are not customers.,Not all bargains mean saving for the consumers.,contradiction,0.9863846
+The cheep does not always lead to consumer's benefit.,Not all bargains mean saving for the consumers.,entail,0.9900506
+No beautiful even mothers love child.,Nothing is as beautiful as a mother’s love for her children.,contradiction,0.99960464
+There is nothing more beautiful than a mother's love for her child.,Nothing is as beautiful as a mother’s love for her children.,entail,0.9958151
+Nothing is more beautiful than a mother's love for her child.,Nothing is as beautiful as a mother’s love for her children.,entail,0.99422014
+There is no beautiful thing rather than lovely passion to child from mother.,Nothing is as beautiful as a mother’s love for her children.,entail,0.9915854
+No other beautiful thing love  mother to son.,Nothing is as beautiful as a mother’s love for her children.,neutral,0.814184
+There is USA army in Okinawa even other pri in Japan.,Nowhere in Japan are there as many U.S. military bases as in Okinawa.,neutral,0.5915951
+Okinawa is only the place where so many American military bases placed in.,Nowhere in Japan are there as many U.S. military bases as in Okinawa.,entail,0.9737221
+"No other in Japan, Okinawa prefecture",Nowhere in Japan are there as many U.S. military bases as in Okinawa.,contradiction,0.9964652
+No other prefecture in Japan has as many US military bases as Okinawa.,Nowhere in Japan are there as many U.S. military bases as in Okinawa.,entail,0.92767966
+No other prefecture of Japan are a lot of American base in Okinawa.,Nowhere in Japan are there as many U.S. military bases as in Okinawa.,entail,0.9441435
+I`ve ever find heavy taihoon first time.,This is the worst typhoon I’ve experienced.,contradiction,0.95424366
+I never had such a terrible typhoon.,This is the worst typhoon I’ve experienced.,neutral,0.9975357
+It's been a first time for me to experience such a strong typhoon.,This is the worst typhoon I’ve experienced.,neutral,0.86499023
+A typhoon is for the first time in my life. ,This is the worst typhoon I’ve experienced.,contradiction,0.9967083
+"For the first time in my life,it is terrible typhoon.",This is the worst typhoon I’ve experienced.,neutral,0.9985429
+"Generally speaking,people become kind as the get older. ","Generally speaking, the older people get, he more broad-minded they become.",entail,0.6572849
+"In general, Man his age","Generally speaking, the older people get, he more broad-minded they become.",entail,0.98802865
+"Generally speaking, the older people become, the more generous they become.","Generally speaking, the older people get, he more broad-minded they become.",entail,0.69648415
+"Generally speaking, people get generous as they get older.","Generally speaking, the older people get, he more broad-minded they become.",entail,0.98313415
+"In general, the more people become older, the more people become tolerable. ","Generally speaking, the older people get, he more broad-minded they become.",contradiction,0.97514856
+I came to home until 20 years.,I went back to my hometown for the first time in twenty years the other day.,contradiction,0.97893435
+I went to hometown the other day for the first time in 20 years.,I went back to my hometown for the first time in twenty years the other day.,entail,0.99779797
+I went home for the first time in 20years the other day.,I went back to my hometown for the first time in twenty years the other day.,entail,0.98992634
+The other day I went home for the first time in 20 years.,I went back to my hometown for the first time in twenty years the other day.,entail,0.99543566
+I have been to home last month since 20 years.,I went back to my hometown for the first time in twenty years the other day.,neutral,0.95588875
+Local people said it is rare in this fine weather.,The local people said that it was the most beautiful day for years.,neutral,0.48377606
+The local people said that it has been a long time since we have had such a good weather.,The local people said that it was the most beautiful day for years.,neutral,0.98921555
+"Local persons said It's been a while such a beatiful weather we have"".""",The local people said that it was the most beautiful day for years.,contradiction,0.9949445
+Local people said that there was no such sunny day for a long time. ,The local people said that it was the most beautiful day for years.,neutral,0.9978115
+Person of this resion said it is very good weather.,The local people said that it was the most beautiful day for years.,entail,0.99452776
+Cherry blossoms bloom around the end of March and bloom in early April ln this region.,"In this area, the cherry blossoms come out around the end of March, and they are at their best in early April.",entail,0.9981816
+cherry blossom start blooming in march and become full in april in ～（の）area.,"In this area, the cherry blossoms come out around the end of March, and they are at their best in early April.",neutral,0.99843997
+"In the area, the cherry blossoms bloom at the end of March and become full bloom in early April.","In this area, the cherry blossoms come out around the end of March, and they are at their best in early April.",entail,0.7320978
+"In this area, cherry blossoms start to bloom in the end of March, and they are in full bloom in the beginning of April.","In this area, the cherry blossoms come out around the end of March, and they are at their best in early April.",entail,0.98588204
+The sakura start blooming at the end of March and it fully blooms at early of April.,"In this area, the cherry blossoms come out around the end of March, and they are at their best in early April.",contradiction,0.98417294
+"You are better to stay here for miniuts,it heavy rain outside.",It’s pouring down outside. I think it would be better to stay here a little longer.,neutral,0.9802459
+"Because it rains heavily in ?, you better staying here for a while.",It’s pouring down outside. I think it would be better to stay here a little longer.,neutral,0.8687371
+"Because of heavy rain, you should stay here for a while.",It’s pouring down outside. I think it would be better to stay here a little longer.,neutral,0.99869907
+"It's raining terribly outside,so it is better for you to stay here for a a while.",It’s pouring down outside. I think it would be better to stay here a little longer.,neutral,0.9972567
+you had better be here because of heavy rain.,It’s pouring down outside. I think it would be better to stay here a little longer.,neutral,0.99873906
+I think weather is changing reacentlly.,These days the weather is changeable.,entail,0.98206615
+"These days, climate frequently changes.",These days the weather is changeable.,entail,0.9883022
+"Recently,the weather is so changeable.",These days the weather is changeable.,entail,0.5742783
+"Recently, the weather changes easily.",These days the weather is changeable.,entail,0.991046
+"Recently,It tend to chenge the weather.",These days the weather is changeable.,neutral,0.9290652
+It has been raining on and off for nearly two weeks since the rainy season began.,"Since the rainy season set in, it has been raining off and on for nearly two weeks.",entail,0.99819046
+Rain sometimes in this two weeks ,"Since the rainy season set in, it has been raining off and on for nearly two weeks.",neutral,0.93357104
+"Since rainy season came, it rains repeatedly for two weeks.","Since the rainy season set in, it has been raining off and on for nearly two weeks.",entail,0.9966181
+It rains and stop from enter the rainy season.,"Since the rainy season set in, it has been raining off and on for nearly two weeks.",entail,0.9892408
+"After entering the Tsuyu, the rain is started or stopped many times for two weeks.","Since the rainy season set in, it has been raining off and on for nearly two weeks.",neutral,0.9986985
+Shall we go to take hikking to Okutama if good weather next Sunday?,How would you like to go hiking in Okutama next Sunday if the weather is nice.,entail,0.99028766
+Why don't we go hiking if the weather is fine this Sunday.,How would you like to go hiking in Okutama next Sunday if the weather is nice.,neutral,0.571023
+"When it will be good weather, would you go hiking to Okutama next Sunday.",How would you like to go hiking in Okutama next Sunday if the weather is nice.,entail,0.9971456
+May I go to the hiking in Okutama with you if the wether of the coming Sunnday is fine ?,How would you like to go hiking in Okutama next Sunday if the weather is nice.,neutral,0.996084
+"When shall we do hiking next summer,it will be sunny.",How would you like to go hiking in Okutama next Sunday if the weather is nice.,neutral,0.99509794
+Weather forecast says Typhoon will come near to Kyushu area in around midnighit tonight.  ,The weather repot says that the typhoon is going to hit the Kyusyu area around midnight.,entail,0.99533916
+"According to forecast, the typhoon is approaching Kyushu-area around this midnight.",The weather repot says that the typhoon is going to hit the Kyusyu area around midnight.,entail,0.99663156
+"According to the weather forecast, the tayhoon will reach the Kyushu-reagion aroud midnight.",The weather repot says that the typhoon is going to hit the Kyusyu area around midnight.,entail,0.97461206
+"According to weather broadcast,typhoon is near resion in Kyusyu tonight.",The weather repot says that the typhoon is going to hit the Kyusyu area around midnight.,entail,0.99691284
+The weather report says that the typhoon will arrive to Kyushu areas around the midnight tonight.,The weather repot says that the typhoon is going to hit the Kyusyu area around midnight.,entail,0.9940394
+It Tokyo is better climet than my home country.,The climate in Tokyo is much milder than that in my hometown.,entail,0.9809533
+The climate of Tokyo is much milder than that of my hometown.,The climate in Tokyo is much milder than that in my hometown.,entail,0.99835724
+The climate in Tokyo is much milder than in my hometown.,The climate in Tokyo is much milder than that in my hometown.,entail,0.99828905
+The climate in Tokyo is milder than that is in my hometown.,The climate in Tokyo is much milder than that in my hometown.,entail,0.99833447
+The wether of Tokyo is more liveable than my local reagion.,The climate in Tokyo is much milder than that in my hometown.,entail,0.9926379
+"This winter,we have much more snow than usual.",We’ve had more snow than usual this winter.,entail,0.99831676
+This winter has a lot of snow .,We’ve had more snow than usual this winter.,entail,0.9960147
+It unprecedentedly snows a lot this year.,We’ve had more snow than usual this winter.,entail,0.5999498
+There is more snow this year than usual.,We’ve had more snow than usual this winter.,entail,0.98717207
+This winter there are a lot of snow rather than other year.,We’ve had more snow than usual this winter.,entail,0.996207
+It is heavy snow to become 20 years before.,This is the heaviest snowfall we’ve had for the past twenty years.,entail,0.9817421
+It's been a 20 years since snowing such a lot.,This is the heaviest snowfall we’ve had for the past twenty years.,entail,0.97340435
+"The heaviest snowfall in recent 20 years.""",This is the heaviest snowfall we’ve had for the past twenty years.,entail,0.99335676
+Such large snow is the first time after the large snow twenty years ago.,This is the heaviest snowfall we’ve had for the past twenty years.,neutral,0.9951068
+It have been very snow since 20 years.,This is the heaviest snowfall we’ve had for the past twenty years.,entail,0.9980033
+Because bus was late in 20minuites according to traffic jam. ,"The traffic was heavy, so my bus came twenty minutes late.",entail,0.9820148
+The bus was 20 minutes late because the road was crowded.,"The traffic was heavy, so my bus came twenty minutes late.",entail,0.9713127
+"Because of the heavy traffic, the bus was late 20 minites as it scheduled.","The traffic was heavy, so my bus came twenty minutes late.",entail,0.8132398
+Because the bus was delayed for 20 minitues by the road traffic.,"The traffic was heavy, so my bus came twenty minutes late.",neutral,0.9968021
+Because of crowding a way ,"The traffic was heavy, so my bus came twenty minutes late.",neutral,0.99887544
+"I have never ever no  accident,even thought I have taking car 30 yarys.","I have been driving for almost thirty years, but fortunately I have never had an accident.",entail,0.983797
+"I have been driving a car almost for thirty years,but I have no car accidents fortunately.","I have been driving for almost thirty years, but fortunately I have never had an accident.",entail,0.9924819
+I fortunately haven't got a car accident for 30 years since I started driving a car.,"I have been driving for almost thirty years, but fortunately I have never had an accident.",entail,0.9957176
+"I have been driving almost 30years, fortunatery I have never had traffic accidents.","I have been driving for almost thirty years, but fortunately I have never had an accident.",entail,0.9975103
+"I've been driving a car for almost 30 years, and fortunately I've never had an accident.","I have been driving for almost thirty years, but fortunately I have never had an accident.",entail,0.9963308
+I had shocked to see the nursery kid had bump of truck this trrafic jam this street.,I was shocked at how a small child was run over by a truck at this corner.,neutral,0.97951174
+I was shocked that I bumped into the accident which a track drove away a kindergarden student on the cross road in this street.,I was shocked at how a small child was run over by a truck at this corner.,neutral,0.9978872
+"I was shocked I saw a Kindergarten  child was hit by the track the intersection of this street, ",I was shocked at how a small child was run over by a truck at this corner.,neutral,0.9898031
+I was very shocked to see that the truck went over the child at the crossroad of this street. ,I was shocked at how a small child was run over by a truck at this corner.,entail,0.99472344
+I was shocked that younger child attacked by track closs road of the way .,I was shocked at how a small child was run over by a truck at this corner.,neutral,0.9959015
+"It shoud make accident,if he were to ride on that train.","If he had been on the train, he would have been in the accident.",entail,0.98991126
+"If he had taken the train, he would have been involved in an accident.","If he had been on the train, he would have been in the accident.",entail,0.996191
+"If he was on the train, he would have been in the accident.","If he had been on the train, he would have been in the accident.",entail,0.99686384
+If he took the train he would got involved in an accident. ,"If he had been on the train, he would have been in the accident.",entail,0.99468344
+"If he ride the train, he might have been involved in the accident.","If he had been on the train, he would have been in the accident.",entail,0.9969964
+"It takes one day to go Osaka from Tokyo by car, but one hour by airplane.","It would take a whole day to get to Osaka from Tokyo by car, but only an hour by plane.",entail,0.90562415
+"It takes a whole day from Tokyo to Osaka by car, but it takes an hour by airplane.","It would take a whole day to get to Osaka from Tokyo by car, but only an hour by plane.",entail,0.9957781
+"It takes a day from Tokyo to Osaka by car, it takes an hour by plane.","It would take a whole day to get to Osaka from Tokyo by car, but only an hour by plane.",entail,0.9903134
+"It takes a day to go to Tokyo from Osaka by car, but it takes an hour by airplane.","It would take a whole day to get to Osaka from Tokyo by car, but only an hour by plane.",entail,0.9953245
+it cosy a day Tokyo to Osaka by car but a minutes by train.,"It would take a whole day to get to Osaka from Tokyo by car, but only an hour by plane.",contradiction,0.99564314
+I stood all the time because bus and train was very clowed.,"Both the train and the bus were jam-packed, so I had to stand all the way.",entail,0.9939388
+The trains and buses were so crowded that I have to stand the whole time.,"Both the train and the bus were jam-packed, so I had to stand all the way.",entail,0.99823666
+"Because both the train and the bus were crowded, I kept standing all the time.","Both the train and the bus were jam-packed, so I had to stand all the way.",entail,0.9968458
+I stood for a long time because the train or the bus was very crowdy.,"Both the train and the bus were jam-packed, so I had to stand all the way.",entail,0.9944882
+I was standing all the time because train and bus crowded.,"Both the train and the bus were jam-packed, so I had to stand all the way.",entail,0.99502003
+"I was so tired, when I arrived at the my destination place.",I was tired out by the time I got to my destination.,entail,0.9980819
+I was tired when I arrived at destination.,I was tired out by the time I got to my destination.,entail,0.9983814
+I was very tired when I arrived at my goal.,I was tired out by the time I got to my destination.,neutral,0.9945634
+"When I arrived the destination, I was exhausted.",I was tired out by the time I got to my destination.,entail,0.99832827
+I was very tired when I reached the objective place.,I was tired out by the time I got to my destination.,entail,0.9939056
+I have know idea people`s thinking are valious that hobby as well.,Different people like different things. You can't tell what someone is interested in.,neutral,0.95143294
+People have different ideas. You don't know who has what hobby.,Different people like different things. You can't tell what someone is interested in.,entail,0.99586606
+Everyone has different thoughts. We wouldn't know what hobbies people have.,Different people like different things. You can't tell what someone is interested in.,neutral,0.990112
+People have different thought. It is not predictable that indivisulas have what kind of hobby.,Different people like different things. You can't tell what someone is interested in.,entail,0.990764
+A person is diffirent from thinking. I do not know who have a hobby.,Different people like different things. You can't tell what someone is interested in.,entail,0.895579
+"I have having over 2 o`clock, to make me fever reading scorrer novel last night.",That detective story was so good I couldn't put it down until two this morning.,neutral,0.9915665
+"I stayed up late until 2 a.m.last night, because I was so absorbed in that detective novel.",That detective story was so good I couldn't put it down until two this morning.,contradiction,0.9890253
+I stayed away by 2 am because I was into the mistery novel last night.,That detective story was so good I couldn't put it down until two this morning.,contradiction,0.8852337
+I was absorbed in reading detective novels so I was up till 2 am last night.,That detective story was so good I couldn't put it down until two this morning.,contradiction,0.98716867
+"Last night, I was crazy for the cetective novel, so I stayed up late until 2 am.",That detective story was so good I couldn't put it down until two this morning.,neutral,0.9912005
+No ambisious this nobel just mede to read even I have ever read books.,The novel I've just finished is the best one I've ever read.,neutral,0.9373556
+I've never been more impressed than the novels I've just read of all the books I've read.,The novel I've just finished is the best one I've ever read.,neutral,0.9816011
+This novel that I have just finished reading is the most impressive one among the others that I read so far.,The novel I've just finished is the best one I've ever read.,entail,0.9857545
+I have never been impressed so much by all the books I had ever read than the novel I've just finished reading.,The novel I've just finished is the best one I've ever read.,neutral,0.98336744
+"Among many books I have read, there is no impressive book rather than the novel which I have just finished reading.",The novel I've just finished is the best one I've ever read.,entail,0.7291078
+To read book we must use imagination proactively.,"If you want to get the most out of book, you have to make a conscious effor to stretch your imagination.",entail,0.986516
+It is because reading books requires an aggresive imagination.,"If you want to get the most out of book, you have to make a conscious effor to stretch your imagination.",neutral,0.9842248
+Because you need to use your imagination when you read books.,"If you want to get the most out of book, you have to make a conscious effor to stretch your imagination.",entail,0.8458118
+"To read a book, you need to use your imagination activetly.","If you want to get the most out of book, you have to make a conscious effor to stretch your imagination.",entail,0.99756587
+To read a book must be imagine.,"If you want to get the most out of book, you have to make a conscious effor to stretch your imagination.",entail,0.9908702
+We must not forget that reading is one of cultural heritage to teach the children.,We should bear in mind that reading is a part of our cultural heritage that we must hand down to our children.,entail,0.991206
+We shouldn't forget that reading book is one of the cultural heritages that we have to take over to our children.,We should bear in mind that reading is a part of our cultural heritage that we must hand down to our children.,entail,0.99639624
+Don't forget reading books is part of cultural heritage we tell children.,We should bear in mind that reading is a part of our cultural heritage that we must hand down to our children.,entail,0.99186605
+We remember the reading book is the one of the culture heritage which we have to tell our children.,We should bear in mind that reading is a part of our cultural heritage that we must hand down to our children.,entail,0.9955591
+Reading a book ,We should bear in mind that reading is a part of our cultural heritage that we must hand down to our children.,entail,0.7591638
+It is very dengerous driving car after drinking 2 bottles vwisky.,It would be dangerous to drink two bottles of whiskey and drive a car.,entail,0.9841314
+It is dangerous to drive a car after you drink two bottles of whiskey.,It would be dangerous to drink two bottles of whiskey and drive a car.,entail,0.9976132
+It is dangerous to drive a car after drinking two bottles of whisky.,It would be dangerous to drink two bottles of whiskey and drive a car.,entail,0.9975695
+It is degerous to drive the car after drinking two bottles of the whiskey.,It would be dangerous to drink two bottles of whiskey and drive a car.,entail,0.9961654
+It is danger to drive a car opening two wiskey bottles.,It would be dangerous to drink two bottles of whiskey and drive a car.,neutral,0.74092346
+Most Japanese high school students go to cram schools to prepare for college entrance exams.,Most Japanese high school students go to a cram school to prepare for college entrance exams.,entail,0.9968927
+Most of high school students in Japan go to Juku to prepare for entrance exam.,Most Japanese high school students go to a cram school to prepare for college entrance exams.,entail,0.9698253
+Many Japanese high school students go to cram school to prepare for university entrance exams.,Most Japanese high school students go to a cram school to prepare for college entrance exams.,entail,0.99784005
+"Most Japanese high school students, they go to cram school to prepare for college entrance exam.",Most Japanese high school students go to a cram school to prepare for college entrance exams.,entail,0.99777776
+Most Japanese high school students go to cram schools to prepare for the university entrance exams.,Most Japanese high school students go to a cram school to prepare for college entrance exams.,entail,0.99666226
+"I was asked next grandmother, Where are you going to? on the train.",An elderly woman sitting next to me on the train asked me where I was going.,entail,0.75365627
+I was asked by a elderly woman sitting next seat in the train where I was going to.,An elderly woman sitting next to me on the train asked me where I was going.,entail,0.99643
+"An old woman sitting next to me in a train, she asked me how far will yo go?",An elderly woman sitting next to me on the train asked me where I was going.,neutral,0.99092215
+I was asked where did you go by the old woman who sat down aside me.,An elderly woman sitting next to me on the train asked me where I was going.,entail,0.9838933
+"I was asked a old mother who I was sitted side by side a train,she said where do you going?",An elderly woman sitting next to me on the train asked me where I was going.,neutral,0.89477414
+It is noimpposibe to make big earthquork.,It is impossible to predict where and when there will be a major earthquake.,neutral,0.95087814
+It is unexpected that in where big earthquakes occur,It is impossible to predict where and when there will be a major earthquake.,entail,0.9769945
+We don't know when and where the big earthquake will occur. ,It is impossible to predict where and when there will be a major earthquake.,entail,0.9975279
+It is not predicable when or where the earthquake occurs. ,It is impossible to predict where and when there will be a major earthquake.,entail,0.98959
+It is not expect to cause a huge earthquick.,It is impossible to predict where and when there will be a major earthquake.,entail,0.7604107
+I was worried about that even Tom has made job.,"Tom insisted that everythig would be all right, but I couldn't help feeling worried.",neutral,0.9986473
+"Tom said that everything would be all right, but I was so nervous.","Tom insisted that everythig would be all right, but I couldn't help feeling worried.",entail,0.9924631
+"Tom said that he has confidence that everthing goes well, but I was worried so much.","Tom insisted that everythig would be all right, but I couldn't help feeling worried.",entail,0.9925247
+Tom everything will go well but I worried about that too much.,"Tom insisted that everythig would be all right, but I couldn't help feeling worried.",entail,0.992547
+"Even though Tom said there was no problem, I was very concerned.","Tom insisted that everythig would be all right, but I couldn't help feeling worried.",entail,0.99323696
+"I had no idea, what I said hurt her.",It never occurred to me that my remark might hurt her feelings.,contradiction,0.9296792
+I don't expected I hurt her with my comment.,It never occurred to me that my remark might hurt her feelings.,entail,0.9969784
+I didn't even think that what I said hurts her feeling.,It never occurred to me that my remark might hurt her feelings.,entail,0.99777156
+I didn't expect my comment might hurt her.,It never occurred to me that my remark might hurt her feelings.,entail,0.99834394
+I never expected that my words hurt her.,It never occurred to me that my remark might hurt her feelings.,entail,0.99656504
+I have decided to srech for job in abroad after graduate to the Univercity.,I've decided to look for a job abroad when I graduate from college.,entail,0.9951934
+I decided to look for a job abroad after I graduate from college.,I've decided to look for a job abroad when I graduate from college.,entail,0.9974406
+I dicided when I graduate university  I will find a job overseas. ,I've decided to look for a job abroad when I graduate from college.,entail,0.9467315
+"When I graduate university, I will look for a job abroad.",I've decided to look for a job abroad when I graduate from college.,entail,0.9984102
+I decide to find a job when I will guraduate college.,I've decided to look for a job abroad when I graduate from college.,contradiction,0.5695603
+"When I was a teenager, I lived in Canada for three years because of my father's job.",I lived in Canada for three years when I was in my teens because my father was transferred there.,entail,0.9885805
+I have lived in Canada in teenager because of my father's work.,I lived in Canada for three years when I was in my teens because my father was transferred there.,entail,0.9970579
+"When I was teenager, I had lived in Canada for three years due to my father's work.",I lived in Canada for three years when I was in my teens because my father was transferred there.,entail,0.99713886
+"When I was a teenager, I had lived in Canada for three years with my father's job.",I lived in Canada for three years when I was in my teens because my father was transferred there.,entail,0.9928973
+"When I was a teenager, I lived in Canada for three years because of my father's work.",I lived in Canada for three years when I was in my teens because my father was transferred there.,entail,0.99136543
+"Because of internet, sales of personal computer is increasing in this several years.","The Internet is widely used, so sales of personal computers have been rapidly increasing over the last few years.",entail,0.9977198
+"In addition to the spread of the Internet, the sales of PC have been increasing rapidly in the past few years.","The Internet is widely used, so sales of personal computers have been rapidly increasing over the last few years.",neutral,0.9962543
+"With the spread of the Internet, sales of computer have been increasing dramatically in the past few days.","The Internet is widely used, so sales of personal computers have been rapidly increasing over the last few years.",contradiction,0.9867556
+"In recent years, with the spread of the internet, sales of personal computers have increased rapidly.","The Internet is widely used, so sales of personal computers have been rapidly increasing over the last few years.",entail,0.9982425
+"Latest years, sales of a computer suddenly incline by spending of internet.","The Internet is widely used, so sales of personal computers have been rapidly increasing over the last few years.",entail,0.99388146
+"When I got on the train this morning, I couldn't find an empty seat.","When I got on the train this morning, I couldn't find an empty seat.",entail,0.9975682
+"When I take a train in this morning, I can't find vacant seat.","When I got on the train this morning, I couldn't find an empty seat.",entail,0.9981026
+"When I got on a train in this morning, I couldn't find an empty seat.","When I got on the train this morning, I couldn't find an empty seat.",entail,0.9979449
+"When I took the train this morning, I didn't find vacancy.","When I got on the train this morning, I couldn't find an empty seat.",entail,0.9954365
+"When I got on the train this morning, I couldn't find a vacant seat.","When I got on the train this morning, I couldn't find an empty seat.",entail,0.9977476
+"I don't wear glasses now, so I don't understand what that sign says.","I'm not wearing glasses now, so I can't make out what the sign says.",entail,0.9977684
+I can't understand the sign because I don't wear eyeglass.,"I'm not wearing glasses now, so I can't make out what the sign says.",entail,0.9968821
+"Because I don't have my glasses now, I don't know what the poster says.","I'm not wearing glasses now, so I can't make out what the sign says.",entail,0.9778701
+"As I don't wear glasses now, I can't read what's on the sign.","I'm not wearing glasses now, so I can't make out what the sign says.",entail,0.9981944
+"Now I'm not wearing my glasses, so I can not understand what the sign says.","I'm not wearing glasses now, so I can't make out what the sign says.",entail,0.9976799
+"Humans have the ability to express what they think, by five years to six years.",Humans learn to express what they think by the age of five or six.,entail,0.99803334
+They have ability to express what they think in their age of 5 or 6.,Humans learn to express what they think by the age of five or six.,entail,0.99793077
+All human-being acquires an ability to express what they think when 5 to 6 years old.,Humans learn to express what they think by the age of five or six.,neutral,0.49912784
+"Humans are around 5～6years old, they have the ability to express what they think.",Humans learn to express what they think by the age of five or six.,entail,0.99738115
+"By the age of 5-6, humans will have the ability to express what they think.",Humans learn to express what they think by the age of five or six.,entail,0.99820006
+I made it  for  your drawing  map.,"Thanks to the map you drew me the other day, I managed to get here without getting lost.",entail,0.99151796
+"Thanks to the map written the other day, I was able to come here.","Thanks to the map you drew me the other day, I managed to get here without getting lost.",entail,0.99818283
+"Thanks to the map you wrote the other day, I could come here without getting lost.","Thanks to the map you drew me the other day, I managed to get here without getting lost.",entail,0.9982664
+"Thanks to the map that you drew the other day, I could come here without hesitation.","Thanks to the map you drew me the other day, I managed to get here without getting lost.",entail,0.9953695
+"I thanks to be drew a map,I could come here soon.","Thanks to the map you drew me the other day, I managed to get here without getting lost.",neutral,0.71468323
+I can't recognize Bob because of change when I met him in the class.,"Bob had changed a lot, so when I saw him at a class reunion, I dind't recognize him.",entail,0.9954137
+"Bob changed a lot, so I didn't recognize him when seeing him in the previous lesson.","Bob had changed a lot, so when I saw him at a class reunion, I dind't recognize him.",entail,0.99338394
+"When I met Bob last class reunion, he changed a lot so I didn't recognize him.","Bob had changed a lot, so when I saw him at a class reunion, I dind't recognize him.",neutral,0.969061
+"Bob was so different, I didn't realize him when I met him in the previous classroom.","Bob had changed a lot, so when I saw him at a class reunion, I dind't recognize him.",entail,0.99172276
+I do not know Bob after classroom because he is very change.,"Bob had changed a lot, so when I saw him at a class reunion, I dind't recognize him.",entail,0.9556531
+"I have studied mas until 4 o`clock,I am verry sllepy.","I stayed up till four last night preparing for the math lesson, so I feel very sleepy.",neutral,0.9422207
+"I stayed up until 4 o'clock yesterday because I was busy preparing for math, so I'm very sleepy.","I stayed up till four last night preparing for the math lesson, so I feel very sleepy.",entail,0.99376523
+I'm very sleepy because I stayed up until 4 o'clock to prepare math.,"I stayed up till four last night preparing for the math lesson, so I feel very sleepy.",entail,0.99825746
+"As I prepared for the math class hard until 4 am, I'm very sleepy.","I stayed up till four last night preparing for the math lesson, so I feel very sleepy.",entail,0.9974624
+I'm very sleepy because I had woken until 4 AM to do pre-study of math yesterday.,"I stayed up till four last night preparing for the math lesson, so I feel very sleepy.",entail,0.99559706
+I have nothing now even I already read nobel book yeasterday from librally.,"I've finished reading the novel I borrowed from the library yesterday, so now I have nothing to do.",neutral,0.99898547
+"I finished reading the novel I borrowed from the library yesterday, so I have nothing to do now.","I've finished reading the novel I borrowed from the library yesterday, so now I have nothing to do.",entail,0.9982849
+"As I finished reading a book borrowed from the library yesterday, I have nothing to do now.","I've finished reading the novel I borrowed from the library yesterday, so now I have nothing to do.",entail,0.9981945
+"I finished reading the novel when I rent yesterday, I have nothing to do now.","I've finished reading the novel I borrowed from the library yesterday, so now I have nothing to do.",neutral,0.6839613
+"I've finished reading the novel that I borrowed from the liblary, so I have no things to do.","I've finished reading the novel I borrowed from the library yesterday, so now I have nothing to do.",entail,0.9936091
+"Some of the students to use the library, as if they were in the coffee shop.",Some students coming to the library act as if they are in a coffee shop.,entail,0.98399884
+"There is a student who come to the library , behave in the coffee shop .",Some students coming to the library act as if they are in a coffee shop.,entail,0.9968363
+"There are some students coming to library, who behave as if being in a cafe.",Some students coming to the library act as if they are in a coffee shop.,entail,0.9974375
+Some students coming to the library act like as if they are in a café.,Some students coming to the library act as if they are in a coffee shop.,entail,0.99110794
+Some students who come to the library behave as like in tearoom.,Some students coming to the library act as if they are in a coffee shop.,contradiction,0.99835974
+"When I was a child, I used to wish my house had been a little bigger.","When I was a child, I often wished my house were a little larger.",entail,0.9981217
+I wish I have a little wide house in childhood.,"When I was a child, I often wished my house were a little larger.",entail,0.99410266
+"At the age of my childhood, I thought that it would be better if my house was a little bigger one.","When I was a child, I often wished my house were a little larger.",entail,0.9975314
+"When I was a child, I would have wished that my house were more spacious.","When I was a child, I often wished my house were a little larger.",entail,0.9979096
+"When I was a child, I often thought that if my house was big a little.","When I was a child, I often wished my house were a little larger.",entail,0.997799
+I want joying helping victims as vollunter.,"I'd like to work as a volunteer helping victims of natural disasters, such as floods or earthquakes.",neutral,0.9927013
+"I would like to do a volunteer for supporting people who are suffering from natural disaster, such as high tide or earthquake.","I'd like to work as a volunteer helping victims of natural disasters, such as floods or earthquakes.",neutral,0.98682517
+I want to act to help people      and earthquake.,"I'd like to work as a volunteer helping victims of natural disasters, such as floods or earthquakes.",entail,0.9964503
+I would like to work as a volunteer to help victims of floods and earthquakes.,"I'd like to work as a volunteer helping victims of natural disasters, such as floods or earthquakes.",entail,0.9978588
+I want to be bolantere helping ,"I'd like to work as a volunteer helping victims of natural disasters, such as floods or earthquakes.",entail,0.98967206
+"Though Tom has good drums , he doesn't allow to use others. ","Tom has nice drums, and he never lets anyone else play them.",entail,0.99801457
+"Tom has a great drum, but he doesn't want anyone to use it.","Tom has nice drums, and he never lets anyone else play them.",entail,0.9959573
+Tom has an excellent drum but he doesn't allow anyone to use it.,"Tom has nice drums, and he never lets anyone else play them.",entail,0.99768555
+Tom has fine drams but he does not allow anyone to use it.,"Tom has nice drums, and he never lets anyone else play them.",entail,0.9895443
+Tom have a excerent drum but he don't use anyone.,"Tom has nice drums, and he never lets anyone else play them.",entail,0.9928388
+"I thought Tom said joking,after that he was thlious.","At first I thought Tom was joking, but later I realized he was serious.",entail,0.98248714
+"At first, I thought Tom told a joke, but later I found out he was serious.","At first I thought Tom was joking, but later I realized he was serious.",entail,0.9978484
+"At first, I thoght Tom said joke, but later I realized he was serious.","At first I thought Tom was joking, but later I realized he was serious.",entail,0.9965121
+"At first, I thought that he was joking, but I later I realized he was serious.","At first I thought Tom was joking, but later I realized he was serious.",entail,0.99689865
+"Firstly I supposed Tom said joke, but after that, I found out he was serious.","At first I thought Tom was joking, but later I realized he was serious.",entail,0.99740547
+"I had tyring to make Itary first time this Sunday,I could make dellisiou.","Last Sunday I tried making some Italian food for the first time, and it was delicious.",entail,0.9906799
+"Last Sunday, I tried to cook Italian food for the first time in my life and it was very delicious.","Last Sunday I tried making some Italian food for the first time, and it was delicious.",entail,0.99748707
+"Last sunday, I tried to cook Italian food for the first time in my life and I succeeded. ","Last Sunday I tried making some Italian food for the first time, and it was delicious.",neutral,0.616478
+"Last Sunday, I tried to cook Italian even for the first time though, those were quite tasty. ","Last Sunday I tried making some Italian food for the first time, and it was delicious.",entail,0.99552506
+"Last Sunndy, I tried to cook italian and it was the first time for me. It was very delisious.","Last Sunday I tried making some Italian food for the first time, and it was delicious.",contradiction,0.97068393
+"I said to sorry to late to An,thought She was upset.","I apologized to Ann for being late, but she didn't forgive me.",neutral,0.9621593
+"I apologized to Ann for being late, but she wouldn't forgive me.","I apologized to Ann for being late, but she didn't forgive me.",entail,0.998131
+"Although I apologized to Ann about being late, she didn't forgive me.","I apologized to Ann for being late, but she didn't forgive me.",entail,0.9982767
+"I made an appologies for being late to Anne, but she didn't forgive me.","I apologized to Ann for being late, but she didn't forgive me.",entail,0.9982969
+Anne did not allow me even though I appologized my delay.,"I apologized to Ann for being late, but she didn't forgive me.",contradiction,0.98856235
+"Every day, I have no time to go to the movies because I am so busy to do household chores. ",I'm so busy doing the housework every day that I have no time to see a movie.,entail,0.9982595
+I don't have time to watch movie because I'm busy housework every day,I'm so busy doing the housework every day that I have no time to see a movie.,entail,0.9982918
+I am so busy with house work everyday that I don't have the chance to go to the movies.,I'm so busy doing the housework every day that I have no time to see a movie.,entail,0.9975159
+"As I'm tied up with housechores everyday, I don't have time to go to see the movies.",I'm so busy doing the housework every day that I have no time to see a movie.,entail,0.9936452
+There is no time to go to the theather because I'm very busy to work in my home. ,I'm so busy doing the housework every day that I have no time to see a movie.,entail,0.9970215
+This wood desk is too heavy to move to upstair by myself.,This wooden desk is too heavy for me to carry upstairs alone.,entail,0.9969037
+"This wood desk is heavy, so it is hard to carry up to second floor by myself.",This wooden desk is too heavy for me to carry upstairs alone.,entail,0.9907533
+This wooden desk is so heavy that I can't bring it up to the second floor.,This wooden desk is too heavy for me to carry upstairs alone.,neutral,0.99305665
+I alone am not able to bring this table to 2nd floor because it is very heavy.,This wooden desk is too heavy for me to carry upstairs alone.,neutral,0.9746516
+The desk of wood do not carry by sesond floor only me because it is heavy.,This wooden desk is too heavy for me to carry upstairs alone.,entail,0.99630153
+I had sad that met many japanese tourlisets during Eourope trip.,"While traveling in Europe,I was disappointed that wherever I went, there were many Japanese tourists.",entail,0.98452824
+"During my trip to Europe, I felt bored because I met Japanese wherever I went.","While traveling in Europe,I was disappointed that wherever I went, there were many Japanese tourists.",entail,0.9980386
+"I was dassapointed during my trip to Europe, because I met many Japanese tourists everywhere I visited.","While traveling in Europe,I was disappointed that wherever I went, there were many Japanese tourists.",contradiction,0.98773324
+"During my trip in Europe, I felt bored of seeing many tourists from Japan wherever countries I visited.","While traveling in Europe,I was disappointed that wherever I went, there were many Japanese tourists.",entail,0.99792886
+"During my trip to Europe, I was bored because I met many Japanese tourists whenever I go.","While traveling in Europe,I was disappointed that wherever I went, there were many Japanese tourists.",entail,0.99739313
+I was very happy to see my mother go to the office wearing the earrings that I gave to her. ,I was very happy when I saw my mother going to work wearing the earrings I had bought her.,entail,0.99472815
+I was happy to see my mother to go to the office with earring I presented.,I was very happy when I saw my mother going to work wearing the earrings I had bought her.,entail,0.9913531
+I was happy to see my mother wearing the earings that I gave her when she went to work.,I was very happy when I saw my mother going to work wearing the earrings I had bought her.,entail,0.99755126
+I was very happy to see a my mother wear I gave her earrings go to work.,I was very happy when I saw my mother going to work wearing the earrings I had bought her.,entail,0.9969223
+I was very happy to see that mother putting ear rings which I presented went to the company.,I was very happy when I saw my mother going to work wearing the earrings I had bought her.,entail,0.9835217
+It is no understand that schools upply for studys only.,"If you expect that schools only teach academic subjects, then this proves that you don't understand what schools are for.",entail,0.9909944
+That you think school is a place where we only studyis evidence that you don't understand the role of school.,"If you expect that schools only teach academic subjects, then this proves that you don't understand what schools are for.",entail,0.99598914
+To regard the schools as the places where they teach you only subjects will proof that you don't understand the roles of schools.,"If you expect that schools only teach academic subjects, then this proves that you don't understand what schools are for.",entail,0.9957579
+It is the proof of misunderstanding the role of the school to think only teaching the study in school.,"If you expect that schools only teach academic subjects, then this proves that you don't understand what schools are for.",entail,0.9916779
+It is not proof that school teach only studying ,"If you expect that schools only teach academic subjects, then this proves that you don't understand what schools are for.",entail,0.6199652
+Most of Japanese spend their time with work to live.,Most Japanese people spend most of their time working to live.,entail,0.9978695
+Most Jaopanese people spended most of their time working to live.,Most Japanese people spend most of their time working to live.,entail,0.9901299
+Most Japanese spend their large part of time to work to live.,Most Japanese people spend most of their time working to live.,entail,0.9982668
+Most Japanese spend most of their time to work to live.,Most Japanese people spend most of their time working to live.,entail,0.998211
+"Most of Japanese, they cost a lot of time working to live.",Most Japanese people spend most of their time working to live.,entail,0.9362173
+Japanese usually express their feelings as indirectly as possible so as not to hurt others.,Japansse people usually express their feelings as indirectly as possible so that they won't offend others.,entail,0.9976273
+Japanese always express without immindiately not to indure otherperson.,Japansse people usually express their feelings as indirectly as possible so that they won't offend others.,contradiction,0.998252
+Japanese generally try to express their feelings as indirectly as possible in order to not hurt others.,Japansse people usually express their feelings as indirectly as possible so that they won't offend others.,entail,0.9977143
+It's normal for Japanese people to express their feelings indirectly for the purpose of not making others feel bad.,Japansse people usually express their feelings as indirectly as possible so that they won't offend others.,entail,0.997347
+Many Japanease express their feelings as indirectly as possible not to hurt others.,Japansse people usually express their feelings as indirectly as possible so that they won't offend others.,entail,0.9978668
+The increase in atmospheric CO2 is closely related to global warming.,The increase in the amout of CO2 in the atomosphere is closely connected with global warming.,entail,0.99822086
+Increase of CO2 is closely related with Earth hottering.,The increase in the amout of CO2 in the atomosphere is closely connected with global warming.,contradiction,0.99139225
+The increase of CO2 in the air is closely related in the global warming.,The increase in the amout of CO2 in the atomosphere is closely connected with global warming.,entail,0.9932181
+closely related to global warming ,The increase in the amout of CO2 in the atomosphere is closely connected with global warming.,entail,0.99637383
+The CO2 increasing in the air is colsely related to the warming up of the earth.,The increase in the amout of CO2 in the atomosphere is closely connected with global warming.,entail,0.9954379
+It is very intersting 100 times to watch baseball studium than TV .,Professional baseball is far more exciting at a stadium than in TV.,neutral,0.99857867
+It is 100 times more interesting to watch professional baseball game in a stadium than watching it on TV.,Professional baseball is far more exciting at a stadium than in TV.,neutral,0.93682086
+Watching baseball games in the excite you 100 times more than doing it on TV.,Professional baseball is far more exciting at a stadium than in TV.,contradiction,0.9444192
+Pro baseball game is 100 times more interesting to watch at the stadium than to watch it on TV.,Professional baseball is far more exciting at a stadium than in TV.,neutral,0.9959461
+Professinal baseball is watch a beseball stadium more 100 interest than watch TV.,Professional baseball is far more exciting at a stadium than in TV.,neutral,0.99814916
+This motorcycle is about twice as expensive in England as in Japan.,This motorbike is about twice as expensive in the U.K as in Japan.,contradiction,0.83616626
+"In England, this bike is twice as expensive as in Japan.",This motorbike is about twice as expensive in the U.K as in Japan.,neutral,0.9982691
+This motorcycle costs in UK approximately twice as expensive as buying in Japan.,This motorbike is about twice as expensive in the U.K as in Japan.,neutral,0.98408407
+This price of this motorcycle is twice as much as it is in Japan.,This motorbike is about twice as expensive in the U.K as in Japan.,entail,0.9901569
+This bike is about twice as expensive in the UK as in Japan.,This motorbike is about twice as expensive in the U.K as in Japan.,contradiction,0.9897658
+"It is getting worse reading books, but it is no curious for young people.","Just because young people today read less than they used to, it doesn't always follow that they are less eager to learn.",neutral,0.9203632
+"Even if the amount of reading books decreased, it couldn't prove that younger generation lost their wants towards wisdom.","Just because young people today read less than they used to, it doesn't always follow that they are less eager to learn.",entail,0.80290365
+The less reading books young people doesn't mean they don't have less intellectual interests.,"Just because young people today read less than they used to, it doesn't always follow that they are less eager to learn.",entail,0.9837531
+The decreased volume of reading the book is not linked to the decreased inteligent intend of current young people.,"Just because young people today read less than they used to, it doesn't always follow that they are less eager to learn.",entail,0.46500415
+Latest younger people is not a little wanting of interigent because they read a few book,"Just because young people today read less than they used to, it doesn't always follow that they are less eager to learn.",neutral,0.901684
+Entrance examination I tried yesterday is more difficult that I thought .,"Frankly speaking, the entrance exams I took yesterday were far more difficult than I had expected.",entail,0.99805605
+"Frankly speaking, the exam I took yesterday was much more difficult than T thought.","Frankly speaking, the entrance exams I took yesterday were far more difficult than I had expected.",entail,0.99818426
+"To be frank, the entrance exam I took yesterday were far more difficult than I had thought.","Frankly speaking, the entrance exams I took yesterday were far more difficult than I had expected.",entail,0.9984889
+"Honestly, the entrance exam I took yesterday is much harder than I expected.","Frankly speaking, the entrance exams I took yesterday were far more difficult than I had expected.",entail,0.99832505
+"Flankely speaking,It was more difficult than I think to do admission exam yesterday","Frankly speaking, the entrance exams I took yesterday were far more difficult than I had expected.",entail,0.99825186
+"There is a country which has a lot of foods in the world. On the other hands, there is a country ten thousands of children die without any food.","In some countries people have too much food, while in others tens of thousands of children are starving.",neutral,0.69477534
+"In some countries, there is a extra food, in others, tens of thousands of children suffer from starving and die.","In some countries people have too much food, while in others tens of thousands of children are starving.",neutral,0.98967606
+"Some countries have plenty of foods, and some countries have thousands of famine children to die.","In some countries people have too much food, while in others tens of thousands of children are starving.",entail,0.99658966
+"In the world, there is the country which has enough food, on the other hand, there is the country where several ten thousand children died by poor food.","In some countries people have too much food, while in others tens of thousands of children are starving.",contradiction,0.99377066
+"All over the world,a lot of food is existing countries but million of children is dying countries.","In some countries people have too much food, while in others tens of thousands of children are starving.",neutral,0.9673817
+"You can`t be diet,if you count collury.","However much exercise you get, you won't lose weight unless you count your calories.",contradiction,0.98722005
+"As long as you don't caliculate the colorie of what you eat, workout doesn't work out for your diet.","However much exercise you get, you won't lose weight unless you count your calories.",contradiction,0.9932058
+"How much you exercise, it doesn't work unless you calculate calories you take. ","However much exercise you get, you won't lose weight unless you count your calories.",contradiction,0.9950159
+"No matter how much you do exercise, you can't lose weight unless you calculate calories.","However much exercise you get, you won't lose weight unless you count your calories.",entail,0.9982528
+"To exersise,you cannot decline weight ,so you calculate caloly.","However much exercise you get, you won't lose weight unless you count your calories.",entail,0.99053115
+Some people in japanese tourist go out with a lot of money in their pocket of pants . ,Some Japanese tourists lack common sense and carry a lot of cash in their backpockets.,neutral,0.96678627
+There are Japanese tourists don't have common sense putting their wallets with bunch of money in their backpocket of  their trousers.,Some Japanese tourists lack common sense and carry a lot of cash in their backpockets.,neutral,0.9988752
+Some Japanese tourists have much cash in the back pockets of their trousers carelessly.,Some Japanese tourists lack common sense and carry a lot of cash in their backpockets.,neutral,0.99480385
+It is out of common sense that someone in Japanese visitors bring much money in the behind poket of their slacs.,Some Japanese tourists lack common sense and carry a lot of cash in their backpockets.,entail,0.99603313
+Japanese tourists are walk to having a lot of money in their pocket.,Some Japanese tourists lack common sense and carry a lot of cash in their backpockets.,neutral,0.87404597
+It is keeping health that having good meals and taking exasise useally.,"In order to stay healthy, you should have a balanced diet and get regular exercise.",entail,0.9638648
+The secrets to keep health is eating good balanced food and exercising periodically. ,"In order to stay healthy, you should have a balanced diet and get regular exercise.",neutral,0.9852267
+The key point to stay healty is to eat a balanced meal and exercise regularly.,"In order to stay healthy, you should have a balanced diet and get regular exercise.",entail,0.9946866
+"The secret to keeping healthy, to eat balanced diet and to exercise regularly. ","In order to stay healthy, you should have a balanced diet and get regular exercise.",entail,0.99384415
+The key to keeping healthy is to eat a balanced meal and exercise regularly.,"In order to stay healthy, you should have a balanced diet and get regular exercise.",entail,0.9958333
+I was surpraise that japan`s city has many neon even gone to abroad.,It is not until you go abroad that you realize how many neon lighs there are in big Japanese cities.,neutral,0.96839464
+It's only when you go abroad that you realize the big cities of Japan have many illumination.,It is not until you go abroad that you realize how many neon lighs there are in big Japanese cities.,entail,0.9951886
+We hardly notice that there are many neon signs in Japanese large city areas before going to foreign countries.,It is not until you go abroad that you realize how many neon lighs there are in big Japanese cities.,entail,0.96552414
+"For the first time when I go abroad, I notice that the big cities of Japan have many neon lights.",It is not until you go abroad that you realize how many neon lighs there are in big Japanese cities.,entail,0.98847187
+"To first go abroad, it notice a lot of neon primary city of japan.",It is not until you go abroad that you realize how many neon lighs there are in big Japanese cities.,entail,0.9978654
+I am worrid that could be speccilly even japanese people could speak English.,It is a pity that many Japanese people mistakenly believe that they have only to speak English to be internationally-minded.,entail,0.98545516
+It's a pity that many Japanese misunderstand that they can become international as long as they can speak English.,It is a pity that many Japanese people mistakenly believe that they have only to speak English to be internationally-minded.,entail,0.9958049
+"It is too bad that many Japanese people think that if they can speak English, they can become an international person.",It is a pity that many Japanese people mistakenly believe that they have only to speak English to be internationally-minded.,entail,0.99072015
+"Many Japanese people misunderstand that if only they speak English, they can be seen as international figure.",It is a pity that many Japanese people mistakenly believe that they have only to speak English to be internationally-minded.,entail,0.99509346
+"There are many Japanese people who misunderstand that they become international people, only if they are able to speak English.",It is a pity that many Japanese people mistakenly believe that they have only to speak English to be internationally-minded.,entail,0.9909244
+It say that no relligion for seven of ten for young people.,It is said that seven out of ten young Japanse people don't believe in religion.,entail,0.9245673
+It is said that 7 our of 10 young people from Japan don't have religion.,It is said that seven out of ten young Japanse people don't believe in religion.,entail,0.9980757
+It is said that 7 young people in 10 totally don't have religious beliefs.,It is said that seven out of ten young Japanse people don't believe in religion.,entail,0.9922651
+It is said that seven in ten Japanese young people is non-religious.,It is said that seven out of ten young Japanse people don't believe in religion.,entail,0.9979609
+it is said that 70 persents of younger Japanese are no,It is said that seven out of ten young Japanse people don't believe in religion.,contradiction,0.9828346
