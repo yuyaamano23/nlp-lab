@@ -1,0 +1,251 @@
+解答文,正答文,111のみ正解とする,010のみ正解とする,0のみ不正解とする,011のみ正解とする,110のみ正解とする
+"It takes one day to go Osaka from Tokyo by car, but one hour by airplane.","It would take a whole day to get to Osaka from Tokyo by car, but only an hour by plane".,0,1,1,1,0
+"It takes a whole day from Tokyo to Osaka by car, but it takes an hour by airplane.","It would take a whole day to get to Osaka from Tokyo by car, but only an hour by plane".,1,1,1,1,1
+"It takes a day from Tokyo to Osaka by car, it takes an hour by plane.","It would take a whole day to get to Osaka from Tokyo by car, but only an hour by plane".,1,1,1,1,1
+"It takes a day to go to Tokyo from Osaka by car, but it takes an hour by airplane.","It would take a whole day to get to Osaka from Tokyo by car, but only an hour by plane".,0,0,1,0,0
+"it cosy a day Tokyo to Osaka by car but a minutes by train.","It would take a whole day to get to Osaka from Tokyo by car, but only an hour by plane".,0,0,0,0,0
+"I stood all the time because bus and train was very clowed.","Both the train and the bus were jam-packed, so I had to stand all the way.",0,0,0,0,0
+"The trains and buses were so crowded that I have to stand the whole time.","Both the train and the bus were jam-packed, so I had to stand all the way.",0,0,1,0,0
+"Because both the train and the bus were crowded, I kept standing all the time.","Both the train and the bus were jam-packed, so I had to stand all the way.",0,1,1,0,0
+"I stood for a long time because the train or the bus was very crowdy.","Both the train and the bus were jam-packed, so I had to stand all the way.",0,1,1,0,1
+"I was standing all the time because train and bus crowded.","Both the train and the bus were jam-packed, so I had to stand all the way.",0,1,1,1,0
+"I was so tired, when I arrived at the my destination place.","I was tired out by the time I got to my destination.",0,1,1,1,0
+"I was tired when I arrived at destination.","I was tired out by the time I got to my destination.",1,1,1,1,1
+"I was very tired when I arrived at my goal.","I was tired out by the time I got to my destination.",1,1,1,1,1
+"When I arrived the destination, I was exhausted.","I was tired out by the time I got to my destination.",1,1,1,1,1
+"I was very tired when I reached the objective place.","I was tired out by the time I got to my destination.",1,1,1,1,1
+"I have know idea people`s thinking are valious that hobby as well.","Different people like different things. You can't tell what someone is interested in.",0,0,1,0,0
+"People have different ideas. You don't know who has what hobby.","Different people like different things. You can't tell what someone is interested in.",1,1,1,1,1
+"Everyone has different thoughts. We wouldn't know what hobbies people have.","Different people like different things. You can't tell what someone is interested in.",1,1,1,1,1
+"People have different thought. It is not predictable that indivisulas have what kind of hobby.","Different people like different things. You can't tell what someone is interested in.",0,0,0,0,0
+"A person is diffirent from thinking. I do not know who have a hobby.","Different people like different things. You can't tell what someone is interested in.",0,0,0,0,0
+"I have having over 2 o`clock, to make me fever reading scorrer novel last night.","That detective story was so good I couldn't put it down until two this morning.",0,0,0,0,0
+"I stayed up late until 2 a.m.last night, because I was so absorbed in that detective novel.","That detective story was so good I couldn't put it down until two this morning.",1,1,1,1,1
+"I stayed away by 2 am because I was into the mistery novel last night.","That detective story was so good I couldn't put it down until two this morning.",0,0,0,0,0
+"I was absorbed in reading detective novels so I was up till 2 am last night.","That detective story was so good I couldn't put it down until two this morning.",1,1,1,1,1
+"Last night, I was crazy for the cetective novel, so I stayed up late until 2 am.","That detective story was so good I couldn't put it down until two this morning.",0,1,1,0,1
+"No ambisious this nobel just mede to read even I have ever read books.","The novel I've just finished is the best one I've ever read.",0,0,0,0,0
+"I've never been more impressed than the novels I've just read of all the books I've read.","The novel I've just finished is the best one I've ever read.",1,1,1,1,1
+"This novel that I have just finished reading is the most impressive one among the others that I read so far.","The novel I've just finished is the best one I've ever read.",0,0,1,0,0
+"I have never been impressed so much by all the books I had ever read than the novel I've just finished reading.","The novel I've just finished is the best one I've ever read.",0,1,1,1,0
+"Among many books I have read, there is no impressive book rather than the novel which I have just finished reading.","The novel I've just finished is the best one I've ever read.",1,1,1,1,1
+"To read book we must use imagination proactively.","If you want to get the most out of book, you have to make a conscious effor to stretch" your imagination.,0,1,1,1,0
+"It is because reading books requires an aggresive imagination.","If you want to get the most out of book, you have to make a conscious effor to stretch" your imagination.,0,1,1,0,1
+"Because you need to use your imagination when you read books.","If you want to get the most out of book, you have to make a conscious effor to stretch" your imagination.,0,0,1,0,0
+"To read a book, you need to use your imagination activetly.","If you want to get the most out of book, you have to make a conscious effor to stretch" your imagination.,0,0,0,0,0
+"To read a book must be imagine.","If you want to get the most out of book, you have to make a conscious effor to stretch" your imagination.,0,0,0,0,0
+"We must not forget that reading is one of cultural heritage to teach the children.","We should bear in mind that reading is a part of our cultural heritage that we must ha"nd down to our children.,1,1,1,1,1
+"We shouldn't forget that reading book is one of the cultural heritages that we have to take over to our children.","We should bear in mind that reading is a part of our cultural heritage that we must ha"nd down to our children.,1,1,1,1,1
+"Don't forget reading books is part of cultural heritage we tell children.","We should bear in mind that reading is a part of our cultural heritage that we must ha"nd down to our children.,1,1,1,1,1
+"We remember the reading book is the one of the culture heritage which we have to tell our children.","We should bear in mind that reading is a part of our cultural heritage that we must ha"nd down to our children.,0,1,1,1,0
+"Reading a book","We should bear in mind that reading is a part of our cultural heritage that we must ha"nd down to our children.,0,0,0,0,0
+"It is very dengerous driving car after drinking 2 bottles vwisky.","It would be dangerous to drink two bottles of whiskey and drive a car.",0,0,0,0,0
+"It is dangerous to drive a car after you drink two bottles of whiskey.","It would be dangerous to drink two bottles of whiskey and drive a car.",1,1,1,1,1
+"It is dangerous to drive a car after drinking two bottles of whisky.","It would be dangerous to drink two bottles of whiskey and drive a car.",1,1,1,1,1
+"It is degerous to drive the car after drinking two bottles of the whiskey.","It would be dangerous to drink two bottles of whiskey and drive a car.",0,1,1,0,0
+"It is danger to drive a car opening two wiskey bottles.","It would be dangerous to drink two bottles of whiskey and drive a car.",0,1,1,0,0
+"Most Japanese high school students go to cram schools to prepare for college entrance exams.","Most Japanese high school students go to a cram school to prepare for college entrance" exams.,1,1,1,1,1
+"Most of high school students in Japan go to Juku to prepare for entrance exam.","Most Japanese high school students go to a cram school to prepare for college entrance" exams.,0,0,0,0,0
+"Many Japanese high school students go to cram school to prepare for university entrance exams.","Most Japanese high school students go to a cram school to prepare for college entrance" exams.,1,1,1,1,1
+"Most Japanese high school students, they go to cram school to prepare for college entrance exam.","Most Japanese high school students go to a cram school to prepare for college entrance" exams.,0,0,0,0,0
+"Most Japanese high school students go to cram schools to prepare for the university entrance exams.","Most Japanese high school students go to a cram school to prepare for college entrance" exams.,1,1,1,1,1
+"I was asked next grandmother, Where are you going to? on the train.","An elderly woman sitting next to me on the train asked me where I was going.",1,1,1,1,1
+"I was asked by a elderly woman sitting next seat in the train where I was going to.","An elderly woman sitting next to me on the train asked me where I was going.",0,0,0,0,0
+"An old woman sitting next to me in a train, she asked me how far will yo go?","An elderly woman sitting next to me on the train asked me where I was going.",0,0,0,0,0
+"I was asked where did you go by the old woman who sat down aside me.","An elderly woman sitting next to me on the train asked me where I was going.",1,1,1,1,1
+"I was asked a old mother who I was sitted side by side a train,she said where do you going?","An elderly woman sitting next to me on the train asked me where I was going.",0,0,0,0,0
+"It is noimpposibe to make big earthquork.","It is impossible to predict where and when there will be a major earthquake.",0,0,0,0,0
+"It is unexpected that in where big earthquakes occur","It is impossible to predict where and when there will be a major earthquake.",0,0,1,0,0
+"We don't know when and where the big earthquake will occur.","It is impossible to predict where and when there will be a major earthquake.",0,0,1,0,0
+"It is not predicable when or where the earthquake occurs.","It is impossible to predict where and when there will be a major earthquake.",0,1,1,0,1
+"It is not expect to cause a huge earthquick.","It is impossible to predict where and when there will be a major earthquake.",0,0,0,0,0
+"I was worried about that even Tom has made job.","Tom insisted that everythig would be all right, but I couldn't help feeling worried.",0,0,0,0,0
+"Tom said that everything would be all right, but I was so nervous.","Tom insisted that everythig would be all right, but I couldn't help feeling worried.",1,1,1,1,1
+"Tom said that he has confidence that everthing goes well, but I was worried so much.","Tom insisted that everythig would be all right, but I couldn't help feeling worried.",1,1,1,1,1
+"Tom everything will go well but I worried about that too much.","Tom insisted that everythig would be all right, but I couldn't help feeling worried.",1,1,1,1,1
+"Even though Tom said there was no problem, I was very concerned.","Tom insisted that everythig would be all right, but I couldn't help feeling worried.",0,0,1,0,0
+"I had no idea, what I said hurt her.","It never occurred to me that my remark might hurt her feelings.",1,1,1,1,1
+"I don't expected I hurt her with my comment.","It never occurred to me that my remark might hurt her feelings.",0,1,1,1,0
+"I didn't even think that what I said hurts her feeling.","It never occurred to me that my remark might hurt her feelings.",0,1,1,0,0
+"I didn't expect my comment might hurt her.","It never occurred to me that my remark might hurt her feelings.",1,1,1,1,1
+"I never expected that my words hurt her.","It never occurred to me that my remark might hurt her feelings.",1,1,1,1,1
+"I have decided to srech for job in abroad after graduate to the Univercity.","I've decided to look for a job abroad when I graduate from college.",0,0,0,0,0
+"I decided to look for a job abroad after I graduate from college.","I've decided to look for a job abroad when I graduate from college.",1,1,1,1,1
+"I dicided when I graduate university  I will find a job overseas.","I've decided to look for a job abroad when I graduate from college.",0,1,1,0,0
+"When I graduate university, I will look for a job abroad.","I've decided to look for a job abroad when I graduate from college.",0,1,1,1,0
+"I decide to find a job when I will guraduate college.","I've decided to look for a job abroad when I graduate from college.",0,0,0,0,0
+"When I was a teenager, I lived in Canada for three years because of my father's job.","I lived in Canada for three years when I was in my teens because my father was transfe"rred there.,1,1,1,1,1
+"I have lived in Canada in teenager because of my father's work.","I lived in Canada for three years when I was in my teens because my father was transfe"rred there.,0,0,1,0,0
+"When I was teenager, I had lived in Canada for three years due to my father's work.","I lived in Canada for three years when I was in my teens because my father was transfe"rred there.,1,1,1,1,1
+"When I was a teenager, I had lived in Canada for three years with my father's job.","I lived in Canada for three years when I was in my teens because my father was transfe"rred there.,1,1,1,1,1
+"When I was a teenager, I lived in Canada for three years because of my father's work.","I lived in Canada for three years when I was in my teens because my father was transfe"rred there.,1,1,1,1,1
+"Because of internet, sales of personal computer is increasing in this several years.","The Internet is widely used, so sales of personal computers have been rapidly increasi"ng over the last few years. ,0,0,0,0,0
+"In addition to the spread of the Internet, the sales of PC have been increasing rapidly in the past few years.","The Internet is widely used, so sales of personal computers have been rapidly increasi"ng over the last few years. ,1,1,1,1,1
+"With the spread of the Internet, sales of computer have been increasing dramatically in the past few days.","The Internet is widely used, so sales of personal computers have been rapidly increasi"ng over the last few years. ,0,1,1,1,0
+"In recent years, with the spread of the internet, sales of personal computers have increased rapidly.","The Internet is widely used, so sales of personal computers have been rapidly increasi"ng over the last few years. ,1,1,1,1,1
+"Latest years, sales of a computer suddenly incline by spending of internet.","The Internet is widely used, so sales of personal computers have been rapidly increasi"ng over the last few years. ,0,0,1,0,0
+"When I got on the train this morning, I couldn't find an empty seat.","When I got on the train this morning, I couldn't find an empty seat.",1,1,1,1,1
+"When I take a train in this morning, I can't find vacant seat.","When I got on the train this morning, I couldn't find an empty seat.",0,1,1,1,0
+"When I got on a train in this morning, I couldn't find an empty seat.","When I got on the train this morning, I couldn't find an empty seat.",0,1,1,1,0
+"When I took the train this morning, I didn't find vacancy.","When I got on the train this morning, I couldn't find an empty seat.",0,1,1,1,0
+"When I got on the train this morning, I couldn't find a vacant seat.","When I got on the train this morning, I couldn't find an empty seat.",1,1,1,1,1
+"I don't wear glasses now, so I don't understand what that sign says.","I'm not wearing glasses now, so I can't make out what the sign says.",0,0,1,0,0
+"I can't understand the sign because I don't wear eyeglass.","I'm not wearing glasses now, so I can't make out what the sign says.",0,0,1,0,0
+"Because I don't have my glasses now, I don't know what the poster says.","I'm not wearing glasses now, so I can't make out what the sign says.",0,0,0,0,0
+"As I don't wear glasses now, I can't read what's on the sign.","I'm not wearing glasses now, so I can't make out what the sign says.",0,0,1,0,0
+"Now I'm not wearing my glasses, so I can not understand what the sign says.","I'm not wearing glasses now, so I can't make out what the sign says.",0,0,0,0,0
+"Humans have the ability to express what they think, by five years to six years.","Humans learn to express what they think by the age of five or six.",1,1,1,1,1
+"They have ability to express what they think in their age of 5 or 6.","Humans learn to express what they think by the age of five or six.",0,0,0,0,0
+"All human-being acquires an ability to express what they think when 5 to 6 years old.","Humans learn to express what they think by the age of five or six.",1,1,1,1,1
+"Humans are around 5～6years old, they have the ability to express what they think.","Humans learn to express what they think by the age of five or six.",1,1,1,1,1
+"By the age of 5-6, humans will have the ability to express what they think.","Humans learn to express what they think by the age of five or six.",1,1,1,1,1
+"I made it  for  your drawing  map.","Thanks to the map you drew me the other day, I managed to get here without getting los"t.,0,0,0,0,0
+"Thanks to the map written the other day, I was able to come here.","Thanks to the map you drew me the other day, I managed to get here without getting los"t.,0,0,1,0,0
+"Thanks to the map you wrote the other day, I could come here without getting lost.","Thanks to the map you drew me the other day, I managed to get here without getting los"t.,1,1,1,1,1
+"Thanks to the map that you drew the other day, I could come here without hesitation.","Thanks to the map you drew me the other day, I managed to get here without getting los"t.,1,1,1,1,1
+"I thanks to be drew a map,I could come here soon.","Thanks to the map you drew me the other day, I managed to get here without getting los"t.,0,0,0,0,0
+"I can't recognize Bob because of change when I met him in the class.","Bob had changed a lot, so when I saw him at a class reunion, I dind't recognize him.",0,0,0,0,0
+"Bob changed a lot, so I didn't recognize him when seeing him in the previous lesson.","Bob had changed a lot, so when I saw him at a class reunion, I dind't recognize him.",1,1,1,1,1
+"When I met Bob last class reunion, he changed a lot so I didn't recognize him.","Bob had changed a lot, so when I saw him at a class reunion, I dind't recognize him.",0,0,1,0,0
+"Bob was so different, I didn't realize him when I met him in the previous classroom.","Bob had changed a lot, so when I saw him at a class reunion, I dind't recognize him.",0,0,1,0,0
+"I do not know Bob after classroom because he is very change.","Bob had changed a lot, so when I saw him at a class reunion, I dind't recognize him.",0,0,0,0,0
+"I have studied mas until 4 o`clock,I am verry sllepy.","I stayed up till four last night preparing for the math lesson, so I feel very sleepy.",0,0,0,0,0
+"I stayed up until 4 o'clock yesterday because I was busy preparing for math, so I'm very sleepy.","I stayed up till four last night preparing for the math lesson, so I feel very sleepy.",1,1,1,1,1
+"I'm very sleepy because I stayed up until 4 o'clock to prepare math.","I stayed up till four last night preparing for the math lesson, so I feel very sleepy.",0,1,1,1,0
+"As I prepared for the math class hard until 4 am, I'm very sleepy.","I stayed up till four last night preparing for the math lesson, so I feel very sleepy.",1,1,1,1,1
+"I'm very sleepy because I had woken until 4 AM to do pre-study of math yesterday.","I stayed up till four last night preparing for the math lesson, so I feel very sleepy.",1,1,1,1,1
+"I have nothing now even I already read nobel book yeasterday from librally.","I've finished reading the novel I borrowed from the library yesterday, so now I have n"othing to do.,0,0,0,0,0
+"I finished reading the novel I borrowed from the library yesterday, so I have nothing to do now.","I've finished reading the novel I borrowed from the library yesterday, so now I have n"othing to do.,1,1,1,1,1
+"As I finished reading a book borrowed from the library yesterday, I have nothing to do now.","I've finished reading the novel I borrowed from the library yesterday, so now I have n"othing to do.,1,1,1,1,1
+"I finished reading the novel when I rent yesterday, I have nothing to do now.","I've finished reading the novel I borrowed from the library yesterday, so now I have n"othing to do.,0,0,1,0,0
+"I've finished reading the novel that I borrowed from the liblary, so I have no things to do.","I've finished reading the novel I borrowed from the library yesterday, so now I have n"othing to do.,0,1,1,0,1
+"Some of the students to use the library, as if they were in the coffee shop.","Some students coming to the library act as if they are in a coffee shop.",0,1,1,1,0
+"There is a student who come to the library , behave in the coffee shop .","Some students coming to the library act as if they are in a coffee shop.",0,0,0,0,0
+"There are some students coming to library, who behave as if being in a cafe.","Some students coming to the library act as if they are in a coffee shop.",0,1,1,1,0
+"Some students coming to the library act like as if they are in a café.","Some students coming to the library act as if they are in a coffee shop.",0,1,1,1,0
+"Some students who come to the library behave as like in tearoom.","Some students coming to the library act as if they are in a coffee shop.",0,1,1,1,0
+"When I was a child, I used to wish my house had been a little bigger.","When I was a child, I often wished my house were a little larger.",1,1,1,1,1
+"I wish I have a little wide house in childhood.","When I was a child, I often wished my house were a little larger.",1,1,1,1,1
+"At the age of my childhood, I thought that it would be better if my house was a little bigger one.","When I was a child, I often wished my house were a little larger.",1,1,1,1,1
+"When I was a child, I would have wished that my house were more spacious.","When I was a child, I often wished my house were a little larger.",0,0,1,0,0
+"When I was a child, I often thought that if my house was big a little.","When I was a child, I often wished my house were a little larger.",1,1,1,1,1
+"I want joying helping victims as vollunter.","I'd like to work as a volunteer helping victims of natural disasters, such as floods o"r earthquakes.,0,0,0,0,0
+"I would like to do a volunteer for supporting people who are suffering from natural disaster, such as high tide or earthquake.","I'd like to work as a volunteer helping victims of natural disasters, such as floods o"r earthquakes.,0,0,0,0,0
+"I want to act to help people      and earthquake.","I'd like to work as a volunteer helping victims of natural disasters, such as floods o"r earthquakes.,0,0,0,0,0
+"I would like to work as a volunteer to help victims of floods and earthquakes.","I'd like to work as a volunteer helping victims of natural disasters, such as floods o"r earthquakes.,1,1,1,1,1
+"I want to be bolantere helping","I'd like to work as a volunteer helping victims of natural disasters, such as floods o"r earthquakes.,0,0,0,0,0
+"Though Tom has good drums , he doesn't allow to use others.","Tom has nice drums, and he never lets anyone else play them.",0,0,0,0,0
+"Tom has a great drum, but he doesn't want anyone to use it.","Tom has nice drums, and he never lets anyone else play them.",0,0,1,0,0
+"Tom has an excellent drum but he doesn't allow anyone to use it.","Tom has nice drums, and he never lets anyone else play them.",1,1,1,1,1
+"Tom has fine drams but he does not allow anyone to use it.","Tom has nice drums, and he never lets anyone else play them.",0,1,1,1,0
+"Tom have a excerent drum but he don't use anyone.","Tom has nice drums, and he never lets anyone else play them.",0,1,1,0,0
+"I thought Tom said joking,after that he was thlious.","At first I thought Tom was joking, but later I realized he was serious.",0,0,0,0,0
+"At first, I thought Tom told a joke, but later I found out he was serious.","At first I thought Tom was joking, but later I realized he was serious.",1,1,1,1,1
+"At first, I thoght Tom said joke, but later I realized he was serious.","At first I thought Tom was joking, but later I realized he was serious.",0,1,1,0,1
+"At first, I thought that he was joking, but I later I realized he was serious.","At first I thought Tom was joking, but later I realized he was serious.",1,1,1,1,1
+"Firstly I supposed Tom said joke, but after that, I found out he was serious.","At first I thought Tom was joking, but later I realized he was serious.",0,0,1,0,0
+"I had tyring to make Itary first time this Sunday,I could make dellisiou.","Last Sunday I tried making some Italian food for the first time, and it was delicious." ,0,0,0,0,0
+"Last Sunday, I tried to cook Italian food for the first time in my life and it was very delicious.","Last Sunday I tried making some Italian food for the first time, and it was delicious." ,1,1,1,1,1
+"Last sunday, I tried to cook Italian food for the first time in my life and I succeeded.","Last Sunday I tried making some Italian food for the first time, and it was delicious." ,0,0,0,0,0
+"Last Sunday, I tried to cook Italian even for the first time though, those were quite tasty.","Last Sunday I tried making some Italian food for the first time, and it was delicious." ,1,1,1,1,1
+"Last Sunndy, I tried to cook italian and it was the first time for me. It was very delisious.","Last Sunday I tried making some Italian food for the first time, and it was delicious." ,0,0,0,0,0
+"I said to sorry to late to An,thought She was upset.","I apologized to Ann for being late, but she didn't forgive me.",0,0,0,0,0
+"I apologized to Ann for being late, but she wouldn't forgive me.","I apologized to Ann for being late, but she didn't forgive me.",1,1,1,1,1
+"Although I apologized to Ann about being late, she didn't forgive me.","I apologized to Ann for being late, but she didn't forgive me.",0,1,1,1,0
+"I made an appologies for being late to Anne, but she didn't forgive me.","I apologized to Ann for being late, but she didn't forgive me.",0,1,1,0,1
+"Anne did not allow me even though I appologized my delay.","I apologized to Ann for being late, but she didn't forgive me.",0,0,0,0,0
+"Every day, I have no time to go to the movies because I am so busy to do household chores.","I'm so busy doing the housework every day that I have no time to see a movie.",0,0,0,0,0
+"I don't have time to watch movie because I'm busy housework every day","I'm so busy doing the housework every day that I have no time to see a movie.",1,1,1,1,1
+"I am so busy with house work everyday that I don't have the chance to go to the movies.","I'm so busy doing the housework every day that I have no time to see a movie.",0,1,1,0,1
+"As I'm tied up with housechores everyday, I don't have time to go to see the movies.","I'm so busy doing the housework every day that I have no time to see a movie.",0,0,1,0,0
+"There is no time to go to the theather because I'm very busy to work in my home.","I'm so busy doing the housework every day that I have no time to see a movie.",0,0,0,0,0
+"This wood desk is too heavy to move to upstair by myself.","This wooden desk is too heavy for me to carry upstairs alone.",0,0,1,0,0
+"This wood desk is heavy, so it is hard to carry up to second floor by myself.","This wooden desk is too heavy for me to carry upstairs alone.",0,0,0,0,0
+"This wooden desk is so heavy that I can't bring it up to the second floor.","This wooden desk is too heavy for me to carry upstairs alone.",0,0,1,0,0
+"I alone am not able to bring this table to 2nd floor because it is very heavy.","This wooden desk is too heavy for me to carry upstairs alone.",1,1,1,1,1
+"The desk of wood do not carry by sesond floor only me because it is heavy.","This wooden desk is too heavy for me to carry upstairs alone.",0,1,1,0,1
+"I had sad that met many japanese tourlisets during Eourope trip.","While traveling in Europe,I was disappointed that wherever I went, there were many Jap"anese tourists.,0,0,0,0,0
+"During my trip to Europe, I felt bored because I met Japanese wherever I went.","While traveling in Europe,I was disappointed that wherever I went, there were many Jap"anese tourists.,0,0,1,0,0
+"I was dassapointed during my trip to Europe, because I met many Japanese tourists everywhere I visited.","While traveling in Europe,I was disappointed that wherever I went, there were many Jap"anese tourists.,0,0,1,0,0
+"During my trip in Europe, I felt bored of seeing many tourists from Japan wherever countries I visited.","While traveling in Europe,I was disappointed that wherever I went, there were many Jap"anese tourists.,0,0,1,0,0
+"During my trip to Europe, I was bored because I met many Japanese tourists whenever I go.","While traveling in Europe,I was disappointed that wherever I went, there were many Jap"anese tourists.,0,0,0,0,0
+"I was very happy to see my mother go to the office wearing the earrings that I gave to her.","I was very happy when I saw my mother going to work wearing the earrings I had bought "her.,1,1,1,1,1
+"I was happy to see my mother to go to the office with earring I presented.","I was very happy when I saw my mother going to work wearing the earrings I had bought "her.,0,1,1,0,0
+"I was happy to see my mother wearing the earings that I gave her when she went to work.","I was very happy when I saw my mother going to work wearing the earrings I had bought "her.,0,1,1,0,0
+"I was very happy to see a my mother wear I gave her earrings go to work.","I was very happy when I saw my mother going to work wearing the earrings I had bought "her.,0,1,1,0,0
+"I was very happy to see that mother putting ear rings which I presented went to the company.","I was very happy when I saw my mother going to work wearing the earrings I had bought "her.,1,1,1,1,1
+"It is no understand that schools upply for studys only.","If you expect that schools only teach academic subjects, then this proves that you don"'t understand what schools are for.,0,0,0,0,0
+"That you think school is a place where we only studyis evidence that you don't understand the role of school.","If you expect that schools only teach academic subjects, then this proves that you don"'t understand what schools are for.,0,1,1,0,1
+"To regard the schools as the places where they teach you only subjects will proof that you don't understand the roles of schools.","If you expect that schools only teach academic subjects, then this proves that you don"'t understand what schools are for.,0,1,1,1,0
+"It is the proof of misunderstanding the role of the school to think only teaching the study in school.","If you expect that schools only teach academic subjects, then this proves that you don"'t understand what schools are for.,0,0,0,0,0
+"It is not proof that school teach only studying","If you expect that schools only teach academic subjects, then this proves that you don"'t understand what schools are for.,0,0,0,0,0
+"Most of Japanese spend their time with work to live.","Most Japanese people spend most of their time working to live.",0,1,1,1,0
+"Most Jaopanese people spended most of their time working to live.","Most Japanese people spend most of their time working to live.",0,0,0,0,0
+"Most Japanese spend their large part of time to work to live.","Most Japanese people spend most of their time working to live.",1,1,1,1,1
+"Most Japanese spend most of their time to work to live.","Most Japanese people spend most of their time working to live.",1,1,1,1,1
+"Most of Japanese, they cost a lot of time working to live.","Most Japanese people spend most of their time working to live.",0,1,1,1,0
+"Japanese usually express their feelings as indirectly as possible so as not to hurt others.","Japansse people usually express their feelings as indirectly as possible so that they "won't offend others.,1,1,1,1,1
+"Japanese always express without immindiately not to indure otherperson.","Japansse people usually express their feelings as indirectly as possible so that they "won't offend others.,1,1,1,1,1
+"Japanese generally try to express their feelings as indirectly as possible in order to not hurt others.","Japansse people usually express their feelings as indirectly as possible so that they "won't offend others.,1,1,1,1,1
+"It's normal for Japanese people to express their feelings indirectly for the purpose of not making others feel bad.","Japansse people usually express their feelings as indirectly as possible so that they "won't offend others.,1,1,1,1,1
+"Many Japanease express their feelings as indirectly as possible not to hurt others.","Japansse people usually express their feelings as indirectly as possible so that they "won't offend others.,0,1,1,0,1
+"The increase in atmospheric CO2 is closely related to global warming.","The increase in the amout of CO2 in the atomosphere is closely connected with global w"arming.,1,1,1,1,1
+"Increase of CO2 is closely related with Earth hottering.","The increase in the amout of CO2 in the atomosphere is closely connected with global w"arming.,0,1,1,0,1
+"The increase of CO2 in the air is closely related in the global warming.","The increase in the amout of CO2 in the atomosphere is closely connected with global w"arming.,0,1,1,1,0
+"closely related to global warming","The increase in the amout of CO2 in the atomosphere is closely connected with global w"arming.,0,0,0,0,0
+"The CO2 increasing in the air is colsely related to the warming up of the earth.","The increase in the amout of CO2 in the atomosphere is closely connected with global w"arming.,0,1,1,0,1
+"It is very intersting 100 times to watch baseball studium than TV .","Professional baseball is far more exciting at a stadium than in TV.",0,0,0,0,0
+"It is 100 times more interesting to watch professional baseball game in a stadium than watching it on TV.","Professional baseball is far more exciting at a stadium than in TV.",1,1,1,1,1
+"Watching baseball games in the excite you 100 times more than doing it on TV.","Professional baseball is far more exciting at a stadium than in TV.",0,1,1,1,0
+"Pro baseball game is 100 times more interesting to watch at the stadium than to watch it on TV.","Professional baseball is far more exciting at a stadium than in TV.",1,1,1,1,1
+"Professinal baseball is watch a beseball stadium more 100 interest than watch TV.","Professional baseball is far more exciting at a stadium than in TV.",0,1,1,0,0
+"This motorcycle is about twice as expensive in England as in Japan.","This motorbike is about twice as expensive in the U.K as in Japan.",1,1,1,1,1
+"In England, this bike is twice as expensive as in Japan.","This motorbike is about twice as expensive in the U.K as in Japan.",1,1,1,1,1
+"This motorcycle costs in UK approximately twice as expensive as buying in Japan.","This motorbike is about twice as expensive in the U.K as in Japan.",1,1,1,1,1
+"This price of this motorcycle is twice as much as it is in Japan.","This motorbike is about twice as expensive in the U.K as in Japan.",0,0,0,0,0
+"This bike is about twice as expensive in the UK as in Japan.","This motorbike is about twice as expensive in the U.K as in Japan.",1,1,1,1,1
+"It is getting worse reading books, but it is no curious for young people.","Just because young people today read less than they used to, it doesn't always follow "that they are less eager to learn.,0,0,0,0,0
+"Even if the amount of reading books decreased, it couldn't prove that younger generation lost their wants towards wisdom.","Just because young people today read less than they used to, it doesn't always follow "that they are less eager to learn.,1,1,1,1,1
+"The less reading books young people doesn't mean they don't have less intellectual interests.","Just because young people today read less than they used to, it doesn't always follow "that they are less eager to learn.,0,0,0,0,0
+"The decreased volume of reading the book is not linked to the decreased inteligent intend of current young people.","Just because young people today read less than they used to, it doesn't always follow "that they are less eager to learn.,0,0,0,0,0
+"Latest younger people is not a little wanting of interigent because they read a few book","Just because young people today read less than they used to, it doesn't always follow "that they are less eager to learn.,0,0,0,0,0
+"Entrance examination I tried yesterday is more difficult that I thought .","Frankly speaking, the entrance exams I took yesterday were far more difficult than I h"ad expected.,0,0,0,0,0
+"Frankly speaking, the exam I took yesterday was much more difficult than T thought.","Frankly speaking, the entrance exams I took yesterday were far more difficult than I h"ad expected.,1,1,1,1,1
+"To be frank, the entrance exam I took yesterday were far more difficult than I had thought.","Frankly speaking, the entrance exams I took yesterday were far more difficult than I h"ad expected.,0,1,1,1,0
+"Honestly, the entrance exam I took yesterday is much harder than I expected.","Frankly speaking, the entrance exams I took yesterday were far more difficult than I h"ad expected.,1,1,1,1,1
+"Flankely speaking,It was more difficult than I think to do admission exam yesterday","Frankly speaking, the entrance exams I took yesterday were far more difficult than I h"ad expected.,0,1,1,0,0
+"There is a country which has a lot of foods in the world.On the other hands, there is a country ten thousands of children die without any food.","In some countries people have too much food, while in others tens of thousands of chil"dren are starving.,1,1,1,1,1
+"In some countries, there is a extra food, in others, tens of thousands of children suffer from starving and die.","In some countries people have too much food, while in others tens of thousands of chil"dren are starving.,0,1,1,1,0
+"Some countries have plenty of foods, and some countries have thousands of famine children to die.","In some countries people have too much food, while in others tens of thousands of chil"dren are starving.,0,1,1,1,0
+"In the world, there is the country which has enough food, on the other hand, there is the country where several ten thousand children died by poor food.","In some countries people have too much food, while in others tens of thousands of chil"dren are starving.,0,1,1,1,0
+"All over the world,a lot of food is existing countries but million of children is dying countries.","In some countries people have too much food, while in others tens of thousands of chil"dren are starving.,0,0,0,0,0
+"You can`t be diet,if you count collury.","However much exercise you get, you won't lose weight unless you count your calories.",0,0,0,0,0
+"As long as you don't caliculate the colorie of what you eat, workout doesn't work out for your diet.","However much exercise you get, you won't lose weight unless you count your calories.",0,0,0,0,0
+"How much you exercise, it doesn't work unless you calculate calories you take.","However much exercise you get, you won't lose weight unless you count your calories.",0,1,1,1,0
+"No matter how much you do exercise, you can't lose weight unless you calculate calories.","However much exercise you get, you won't lose weight unless you count your calories.",1,1,1,1,1
+"To exersise,you cannot decline weight ,so you calculate caloly.","However much exercise you get, you won't lose weight unless you count your calories.",0,0,0,0,0
+"Some people in japanese tourist go out with a lot of money in their pocket of pants .","Some Japanese tourists lack common sense and carry a lot of cash in their backpockets.",0,0,0,0,0
+"There are Japanese tourists don't have common sense putting their wallets with bunch of money in their backpocket of  their trousers.","Some Japanese tourists lack common sense and carry a lot of cash in their backpockets.",0,1,1,1,0
+"Some Japanese tourists have much cash in the back pockets of their trousers carelessly.","Some Japanese tourists lack common sense and carry a lot of cash in their backpockets.",0,0,0,0,0
+"It is out of common sense that someone in Japanese visitors bring much money in the behind poket of their slacs.","Some Japanese tourists lack common sense and carry a lot of cash in their backpockets.",0,0,0,0,0
+"Japanese tourists are walk to having a lot of money in their pocket.","Some Japanese tourists lack common sense and carry a lot of cash in their backpockets.",0,0,0,0,0
+"It is keeping health that having good meals and taking exasise useally.","In order to stay healthy, you should have a balanced diet and get regular exercise.",0,0,0,0,0
+"The secrets to keep health is eating good balanced food and exercising periodically.","In order to stay healthy, you should have a balanced diet and get regular exercise.",0,1,1,1,0
+"The key point to stay healty is to eat a balanced meal and exercise regularly.","In order to stay healthy, you should have a balanced diet and get regular exercise.",0,1,1,1,0
+"The secret to keeping healthy, to eat balanced diet and to exercise regularly.","In order to stay healthy, you should have a balanced diet and get regular exercise.",0,1,1,1,0
+"The key to keeping healthy is to eat a balanced meal and exercise regularly.","In order to stay healthy, you should have a balanced diet and get regular exercise.",1,1,1,1,1
+"I was surpraise that japan`s city has many neon even gone to abroad.","It is not until you go abroad that you realize how many neon lighs there are in big Ja"panese cities.,0,0,0,0,0
+"It's only when you go abroad that you realize the big cities of Japan have many illumination.","It is not until you go abroad that you realize how many neon lighs there are in big Ja"panese cities.,0,0,0,0,0
+"We hardly notice that there are many neon signs in Japanese large city areas before going to foreign countries.","It is not until you go abroad that you realize how many neon lighs there are in big Ja"panese cities.,1,1,1,1,1
+"For the first time when I go abroad, I notice that the big cities of Japan have many neon lights.","It is not until you go abroad that you realize how many neon lighs there are in big Ja"panese cities.,1,1,1,1,1
+"To first go abroad, it notice a lot of neon primary city of japan.","It is not until you go abroad that you realize how many neon lighs there are in big Ja"panese cities.,0,1,1,1,0
+"I am worrid that could be speccilly even japanese people could speak English.","It is a pity that many Japanese people mistakenly believe that they have only to speak" English to be internationally-minded.,0,0,0,0,0
+"It's a pity that many Japanese misunderstand that they can become international as long as they can speak English.","It is a pity that many Japanese people mistakenly believe that they have only to speak" English to be internationally-minded.,1,1,1,1,1
+"It is too bad that many Japanese people think that if they can speak English, they can become an international person.","It is a pity that many Japanese people mistakenly believe that they have only to speak" English to be internationally-minded.,0,1,1,1,0
+"Many Japanese people misunderstand that if only they speak English, they can be seen as international figure.","It is a pity that many Japanese people mistakenly believe that they have only to speak" English to be internationally-minded.,1,1,1,1,1
+"There are many Japanese people who misunderstand that they become international people, only if they are able to speak English.","It is a pity that many Japanese people mistakenly believe that they have only to speak" English to be internationally-minded.,1,1,1,1,1
+"It say that no relligion for seven of ten for young people.","It is said that seven out of ten young Japanse people don't believe in religion.",0,1,1,0,0
+"It is said that 7 our of 10 young people from Japan don't have religion.","It is said that seven out of ten young Japanse people don't believe in religion.",0,1,1,0,0
+"It is said that 7 young people in 10 totally don't have religious beliefs.","It is said that seven out of ten young Japanse people don't believe in religion.",1,1,1,1,1
+"It is said that seven in ten Japanese young people is non-religious.","It is said that seven out of ten young Japanse people don't believe in religion.",0,1,1,1,0
+"it is said that 70 persents of younger Japanese are no.","It is said that seven out of ten young Japanse people don't believe in religion.",0,0,0,0,0
